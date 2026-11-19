@@ -1,0 +1,9 @@
+# Pinned-floor dependencies for environments that prefer requirements.txt over
+# `pip install -e .`. These mirror pyproject.toml. Install with:
+#   pip install -r requirements.txt
+numpy>=1.24
+torch>=2.0
+scipy>=1.10
+matplotlib>=3.7
+scikit-learn>=1.2
+h5py>=3.8

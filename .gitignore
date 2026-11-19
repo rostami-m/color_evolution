@@ -1,0 +1,23 @@
+# Python environments and byte-compiled files
+.venv/
+__pycache__/
+*.py[cod]
+
+# Generated and private project materials
+results/
+data/
+figures/
+archive/
+paper/
+runner/
+scripts/
+PROVENANCE.md
+CITATION.cff
+Makefile
+
+# OS noise
+.DS_Store
+
+# Model weights
+*.safetensors
+*.bin
