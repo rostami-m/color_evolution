@@ -8,6 +8,6 @@ Compile from this directory with a TeX distribution supplying `elsarticle` and s
 tectonic visionresearch-article.tex
 ```
 
-Alternatively use `latexmk -pdf visionresearch-article.tex`. The class and required packages can be installed from the TeX distribution. Figure regeneration instructions are in the repository README. `REVISION_AUDIT.md` records scientific and implementation checks; the public release tag is `visionresearch-revision-20261124`.
+Alternatively use `latexmk -pdf visionresearch-article.tex`. The class and required packages can be installed from the TeX distribution. Figure regeneration instructions are in the repository README. `REVISION_AUDIT.md` records scientific and implementation checks; the public release tag is `visionresearch-revision-20261124-v2`.
 
 The response letter and received reviewer/author correspondence remain in the author's Overleaf project; they are not part of this public code package.

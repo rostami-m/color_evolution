@@ -12,7 +12,7 @@ New post-production, saved-checkpoint diagnostics hold weights fixed while chang
 
 ## Implementation and numerical evidence
 
-The code release is https://github.com/rostami-m/color_evolution at tag `visionresearch-revision-20261124`.
+The code release is https://github.com/rostami-m/color_evolution at tag `visionresearch-revision-20261124-v2`.
 
 | Check | Result and scope |
 |---|---|
@@ -46,3 +46,11 @@ The code repository provides detailed reports under `provenance/`, a compact res
 The manuscript, response and cover letter compile with Tectonic. Citation keys resolve and bibliography metadata were checked; new references distinguish published records from accessible preprint versions. The abstract, figures, captions, result tables and response pages were visually checked. Figures are vector PDFs regenerated from the audited result bundle. Superseded journal variants and old figures were removed from the active tree, with history retained at original Overleaf commit `c45e642`.
 
 These checks support implementation continuity and consistency of reported measurements. They do not establish biological validity, recover the missing historical run, provide additional independent scene partitions, or guarantee identical fitted weights across hardware. Thirty seeds condition on one fixed eight-scene partition. The author retains responsibility for final scientific and submission decisions.
+
+## Reviewer-adequacy follow-up
+
+A further review found that scaling the figures in LaTeX reduced some labels to 5–6 points. The generators were revised, and the compiled manuscript was checked again: ordinary axis, legend, count and panel text is now at least 8.1 points (the mathematical superscript in R² is smaller). Captions and legend placement were checked in the final document. No scientific results changed.
+
+The related-work discussion now balances CLIP limitations with Akbarinia's positive task-dependent category-agreement result (2025, DOI 10.1016/j.neunet.2024.106758; primary author project and publisher/PubMed metadata checked). It also specifies the distinction between network chromatic activation tuning and human detection thresholds in Songlin et al. The introduction states the transferable contribution as a dissociation between learned weight indices, fixed-weight induction and decoded response sign. The response letter provides exact section, figure and table locations.
+
+All explicit reviewer requests have substantive responses. Human-scale validation, resolution convergence, causal attribution of learned-filter changes, and broader environmental generalization remain outside the established findings. The versioned follow-up is `visionresearch-revision-20261124-v2`; the original tag remains available.

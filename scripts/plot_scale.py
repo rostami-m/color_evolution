@@ -77,9 +77,9 @@ def refresh_data():
 
 
 def plot(data):
-    plt.rcParams.update({'font.family':'DejaVu Sans','font.size':9,'axes.titlesize':9,
-                         'axes.labelsize':9,'pdf.fonttype':42,'ps.fonttype':42})
-    fig, axes = plt.subplots(1,3,figsize=(7.0,3.7),facecolor='white')
+    plt.rcParams.update({'font.family':'DejaVu Sans','font.size':11,'axes.titlesize':11.5,
+                         'axes.labelsize':11,'pdf.fonttype':42,'ps.fonttype':42})
+    fig, axes = plt.subplots(1,3,figsize=(7.0,4.0),facecolor='white')
     fig.subplots_adjust(left=.035,right=.985,bottom=.43,top=.88,wspace=.20)
     colors = ['#e9edf1','#f6f3e9','#287e9d','#e5a24f']
     cmap=ListedColormap(colors)
@@ -94,11 +94,11 @@ def plot(data):
         ax.grid(which='minor',color='white',linewidth=.25 if n==27 else .55)
         ax.tick_params(which='both',bottom=False,left=False,labelbottom=False,labelleft=False)
         lo=(n-width)//2;ax.add_patch(Rectangle((lo-.5,lo-.5),width,width,fill=False,edgecolor='#17364a',linewidth=1.1))
-        ax.set_title(f'{chr(65+j)}  Patch {n}×{n}; target {width}×{width}\nDilation {d}',pad=7)
-        ax.text(.5,-.12,f"Target access: {100*geom['target_access_fraction']:.1f}%",transform=ax.transAxes,ha='center',fontsize=9,color='#206c86')
-        ax.text(.5,-.25,f"Frame exposure: {100*geom['padding_fraction']:.1f}%",transform=ax.transAxes,ha='center',fontsize=9,color='#9a5c0c')
+        ax.set_title(f'{chr(65+j)}  Patch {n}×{n}\nTarget {width}×{width}; d={d}',pad=7)
+        ax.text(.5,-.12,f"Access: {100*geom['target_access_fraction']:.1f}%",transform=ax.transAxes,ha='center',fontsize=11,color='#206c86')
+        ax.text(.5,-.25,f"Frame: {100*geom['padding_fraction']:.1f}%",transform=ax.transAxes,ha='center',fontsize=11,color='#9a5c0c')
     legend=[Patch(facecolor=colors[2],label='Target samples surround'),Patch(facecolor=colors[1],edgecolor='#17364a',label='Target samples target only'),Patch(facecolor=colors[3],label='Position samples zero padding')]
-    fig.legend(handles=legend,loc='lower center',bbox_to_anchor=(.5,.02),ncol=1,frameon=False,fontsize=9)
+    fig.legend(handles=legend,loc='lower center',bbox_to_anchor=(.5,.02),ncol=1,frameon=False,fontsize=11)
     fig.savefig(OUT/'scale_geometry.pdf',facecolor='white')
     fig.savefig(OUT/'scale_geometry.png',dpi=220,facecolor='white')
     plt.close(fig)

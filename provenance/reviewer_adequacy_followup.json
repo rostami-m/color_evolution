@@ -1,0 +1,32 @@
+{
+  "scope": "Reviewer-adequacy follow-up; presentation and literature only, scientific numerical inputs unchanged",
+  "figure_readability": {
+    "18": {
+      "min_ordinary_text_pt": 8.480340003967285,
+      "small_math_superscripts": []
+    },
+    "20": {
+      "min_ordinary_text_pt": 8.147624969482422,
+      "small_math_superscripts": [
+        [
+          "2",
+          6.97384786605835
+        ]
+      ]
+    },
+    "22": {
+      "min_ordinary_text_pt": 8.147624969482422,
+      "small_math_superscripts": [],
+      "caption_to_footer_gap_pt": 28.57958984375
+    }
+  },
+  "literature_added": {
+    "key": "akbarinia2025categorical",
+    "doi": "10.1016/j.neunet.2024.106758",
+    "primary_author_methods": "https://arashakbarinia.github.io/projects/colourcats/",
+    "metadata": "https://pubmed.ncbi.nlm.nih.gov/39368278/",
+    "access": "Author project and primary metadata read; final publisher PDF inaccessible"
+  },
+  "response_locations": "Exact section/figure/table references added",
+  "scientific_retests": "Not repeated: no training, data, metric or numerical analysis changes"
+}

@@ -1,15 +1,15 @@
 {
-  "release_tag": "visionresearch-revision-20261124",
+  "release_tag": "visionresearch-revision-20261124-v2",
   "sha256": {
-    "README.md": "d439623c8c9083b4e33eec1265862bdf6487264f4e58d3ebce2e8c7751e4d150",
-    "REVISION_AUDIT.md": "3820784c14d760d3c2fd16e8e9c3fe7a85a3b5744020b6854878f90a040ba3d3",
+    "README.md": "a153cfb7d192fb957dfc814bc264557f1fc2c431f601f838b17b9f9e40cffa31",
+    "REVISION_AUDIT.md": "bbded10f631d39e4e533d1b4a6d93752ca2d6217821cf0f0cc8153b377c07b14",
     "elsarticle-harv.bst": "4fc8264ba5392b3f63542a568ecb1c8a880a410583b41f2a3935f175bc040de4",
-    "references.bib": "76eb7cb4cda730f5d17ba09dd4a8d3d7a43d99e888d1f3973316e76a11ebe4f5",
-    "revision_figures/illusion_results.pdf": "b3a8b0fd9e5fc0fb01750c0ccbf9e785690a7a7fc5d7f9b057f59920a8dc353b",
-    "revision_figures/main_results.pdf": "85cbee0656ff47e4c53370c9bdc791eca90752b8f705060171dc3763ca6bb231",
-    "revision_figures/scale_geometry.pdf": "3c84f291ba693acbc28efb1386a117030cdfd26acc9db31b8c69677215b21bb2",
+    "references.bib": "245d01d720ec9dd76d6d23380182fc8e5e114ae720a309af210ea2c311e5123d",
+    "revision_figures/illusion_results.pdf": "a6fd91290c878f4486ec49e469700d222e8509798e26d4ee29b146536417ff33",
+    "revision_figures/main_results.pdf": "18adff27b95f92bc4e01a81c5ec36e33233bb03bfbf1ec2ed25102942c629ef1",
+    "revision_figures/scale_geometry.pdf": "9b060717553df4e3abfe7aa91ff99956270482c8c6e4c00b764eaaaa52d9ced0",
     "scale_diagnostics.tex": "673d9199ca9e70c4d2a81ecaea56ea57d4fe64a228e2e1e9908498a0e3bbbb37",
-    "visionresearch-article.pdf": "4dd94993d1f27ee7b5d8a4d0b99422b0b430c0f0c05a2f2c78ade5fd04d0ccf1",
-    "visionresearch-article.tex": "b167c7d750ac1d3d5f31d9fd136255757987c5af3f4bb255eb1240b51c55d14d"
+    "visionresearch-article.pdf": "8f3d486c07453a9d980e90376b3ffa6bb6e51cd8b09110ba5d31e9e725715842",
+    "visionresearch-article.tex": "bb2f2b5f21dd35f02178feb3fcbc6987edd2a5692dbc2df5ac5f916e9d4eaa43"
   }
 }

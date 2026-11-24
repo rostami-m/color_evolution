@@ -2,7 +2,7 @@
 
 Reproducible code and numerical results for the revised color-vision study. The active implementation is `revision/`, derived from the frozen source that ran the completed 2,443-job study (6,870 model/control records, 30 paired seed blocks). The older `src/`, `experiments/`, and `run_all.py` workflow is retired from this release; its Git history and the original research archive are preserved.
 
-The revised manuscript and compiled PDF are in `paper/`. Release tag: `visionresearch-revision-20261124`. The code–paper audit is `reproducibility/PAPER_CODE_AUDIT.md`.
+The revised manuscript and compiled PDF are in `paper/`. Release tag: `visionresearch-revision-20261124-v2`. The code–paper audit is `reproducibility/PAPER_CODE_AUDIT.md`.
 
 ## Install
 
