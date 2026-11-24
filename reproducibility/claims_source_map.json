@@ -1,0 +1,13 @@
+{
+  "note": "Original-source locators are logical, not absolute paths. Original SHA256 values refer to pre-sanitization files; published_results/manifest.json hashes public files. JSON pointers and numerical values are unchanged.",
+  "map": {
+    "PRODUCTION_RUN/analysis/comparison_20261121/primary/primary_analysis.json": "published_results/primary/primary_analysis.json",
+    "PRODUCTION_RUN/analysis/comparison_20261121/illusions_utility/audit.json": "published_results/illusions_utility/audit.json",
+    "PRODUCTION_RUN/analysis/comparison_20261121/illusions_utility/additional_audit.json": "published_results/illusions_utility/additional_audit.json",
+    "PRODUCTION_RUN/analysis/comparison_20261121/robustness/audit.json": "published_results/robustness/audit.json",
+    "PRODUCTION_RUN/analysis/comparison_20261121/robustness/cma_initialization_audit.json": "published_results/robustness/cma_initialization_audit.json",
+    "PRODUCTION_RUN/analysis/E5a.json": "published_results/stages/E5a.json",
+    "PRODUCTION_RUN/analysis/comparison_20261121/raw_decoding/summary.json": "published_results/raw_decoding/summary.json",
+    "AUDIT/current_integrity_summary.json": "reproducibility/production_integrity_snapshot.json"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "date": "2026-11-24",
+  "shared_artifacts_exact": {
+    "visionresearch-article.tex": true,
+    "scale_diagnostics.tex": true,
+    "references.bib": true,
+    "elsarticle-harv.bst": true,
+    "REVISION_AUDIT.md": true,
+    "revision_figures/main_results.pdf": true,
+    "revision_figures/illusion_results.pdf": true,
+    "revision_figures/scale_geometry.pdf": true
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "date": "2026-11-24",
+  "command": "python reproducibility/verify_claims.py",
+  "claims_checked": 267,
+  "failures": [],
+  "scope": "Checks original values or recorded field subsets; derived architecture counts recomputed from indexed comparisons."
+}

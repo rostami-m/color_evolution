@@ -1,0 +1,32 @@
+{
+  "date": "2026-11-24",
+  "passed": true,
+  "files": [
+    {
+      "file": "primary/primary_analysis.json",
+      "n_mismatches": 0,
+      "mismatches": []
+    },
+    {
+      "file": "robustness/audit.json",
+      "n_mismatches": 0,
+      "mismatches": []
+    },
+    {
+      "file": "robustness/cma_initialization_audit.json",
+      "n_mismatches": 0,
+      "mismatches": []
+    },
+    {
+      "file": "illusions_utility/audit.json",
+      "n_mismatches": 0,
+      "mismatches": []
+    },
+    {
+      "file": "illusions_utility/additional_audit.json",
+      "n_mismatches": 0,
+      "mismatches": []
+    }
+  ],
+  "scope": "All post-run primary/robustness/CMA-initialization/signed-probe/utility summaries recomputed from original completed job records with portable scripts. Exact numeric equality required. File-path provenance strings may differ. Raw-cone decoder fitting not repeated; published per-seed raw-cone outputs retained."
+}

@@ -1,0 +1,546 @@
+{
+  "analysis_backend": "cpu",
+  "caveats": [
+    "Thirty seeds are a fixed planning budget, not a power guarantee.",
+    "Bootstrap intervals are descriptive; no equivalence margin was defined.",
+    "Source-scene generalization is limited by the eight-scene dataset.",
+    "Failed or low-performing seeds are retained in the primary analysis."
+  ],
+  "cross_condition_comparisons": [
+    {
+      "condition": "p9_optimizer",
+      "interpretation": "Exploratory paired contrasts; reference chosen by declared baseline when present",
+      "metrics": {
+        "double_opponency_score": {
+          "ci95": [
+            0.02691804414318088,
+            0.06051545809577067
+          ],
+          "independent_unit": "network seed",
+          "mean": 0.04264254464126625,
+          "n": 30
+        },
+        "double_opponent_fraction": {
+          "ci95": [
+            -0.008333333333333333,
+            0.016770833333332763
+          ],
+          "independent_unit": "network seed",
+          "mean": 0.004166666666666667,
+          "n": 30
+        },
+        "normalized_chromatic_power": {
+          "ci95": [
+            -0.0585197738695401,
+            -0.016098080671799946
+          ],
+          "independent_unit": "network seed",
+          "mean": -0.03757903011048654,
+          "n": 30
+        }
+      },
+      "mode": "classify",
+      "paired_seeds": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ],
+      "reference": "p27_optimizer"
+    },
+    {
+      "condition": "p9_optimizer",
+      "interpretation": "Exploratory paired contrasts; reference chosen by declared baseline when present",
+      "metrics": {
+        "double_opponency_score": {
+          "ci95": [
+            -0.006622864762504976,
+            0.03449561372268757
+          ],
+          "independent_unit": "network seed",
+          "mean": 0.014031532057613498,
+          "n": 30
+        },
+        "double_opponent_fraction": {
+          "ci95": [
+            -0.0375,
+            0.05416666666666667
+          ],
+          "independent_unit": "network seed",
+          "mean": 0.008333333333333333,
+          "n": 30
+        },
+        "normalized_chromatic_power": {
+          "ci95": [
+            -0.014714762237713392,
+            0.029021008222965432
+          ],
+          "independent_unit": "network seed",
+          "mean": 0.006569241157006452,
+          "n": 30
+        }
+      },
+      "mode": "cma",
+      "paired_seeds": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ],
+      "reference": "p27_optimizer"
+    }
+  ],
+  "groups": [
+    {
+      "condition": "p27_optimizer",
+      "metrics": {
+        "double_opponency_score": {
+          "ci95": [
+            0.034615547257042266,
+            0.057105633725235146
+          ],
+          "independent_unit": "network seed",
+          "mean": 0.04497909264986651,
+          "n": 30
+        },
+        "double_opponent_fraction": {
+          "ci95": [
+            0.0,
+            0.029166666666666667
+          ],
+          "independent_unit": "network seed",
+          "mean": 0.0125,
+          "n": 30
+        },
+        "normalized_chromatic_power": {
+          "ci95": [
+            0.6509278334560984,
+            0.7095946169633768
+          ],
+          "independent_unit": "network seed",
+          "mean": 0.680946663416477,
+          "n": 30
+        }
+      },
+      "mode": "classify",
+      "n_networks": 30,
+      "performance": {
+        "accuracy": {
+          "ci95": [
+            0.6253000000000001,
+            0.712375
+          ],
+          "independent_unit": "network seed",
+          "mean": 0.6680333333333333,
+          "n": 30
+        },
+        "balanced_accuracy": {
+          "ci95": [
+            0.6253000000000001,
+            0.712375
+          ],
+          "independent_unit": "network seed",
+          "mean": 0.6680333333333333,
+          "n": 30
+        },
+        "r2": {
+          "ci95": null,
+          "independent_unit": "network seed",
+          "mean": null,
+          "n": 0
+        },
+        "rmse_kelvin": {
+          "ci95": null,
+          "independent_unit": "network seed",
+          "mean": null,
+          "n": 0
+        }
+      },
+      "probe_summaries": {},
+      "signed_simultaneous_raw": [],
+      "validation_gated_metrics": {
+        "double_opponency_score": {
+          "ci95": [
+            0.03315840930971203,
+            0.05151945169241961
+          ],
+          "independent_unit": "network seed",
+          "mean": 0.04139253410881409,
+          "n": 29
+        },
+        "double_opponent_fraction": {
+          "ci95": [
+            0.0,
+            0.021551724137931036
+          ],
+          "independent_unit": "network seed",
+          "mean": 0.008620689655172414,
+          "n": 29
+        },
+        "normalized_chromatic_power": {
+          "ci95": [
+            0.6514223675363295,
+            0.7127572991304073
+          ],
+          "independent_unit": "network seed",
+          "mean": 0.682319363896233,
+          "n": 29
+        }
+      },
+      "validation_pass_count": 29
+    },
+    {
+      "condition": "p27_optimizer",
+      "metrics": {
+        "double_opponency_score": {
+          "ci95": [
+            0.13824139586120782,
+            0.17010986994897662
+          ],
+          "independent_unit": "network seed",
+          "mean": 0.15344228541228186,
+          "n": 30
+        },
+        "double_opponent_fraction": {
+          "ci95": [
+            0.029166666666666667,
+            0.09166666666666666
+          ],
+          "independent_unit": "network seed",
+          "mean": 0.058333333333333334,
+          "n": 30
+        },
+        "normalized_chromatic_power": {
+          "ci95": [
+            0.6571286707520356,
+            0.6887405268603519
+          ],
+          "independent_unit": "network seed",
+          "mean": 0.6731316424312309,
+          "n": 30
+        }
+      },
+      "mode": "cma",
+      "n_networks": 30,
+      "performance": {
+        "accuracy": {
+          "ci95": [
+            0.6012091666666666,
+            0.6900716666666665
+          ],
+          "independent_unit": "network seed",
+          "mean": 0.6459666666666667,
+          "n": 30
+        },
+        "balanced_accuracy": {
+          "ci95": [
+            0.6012091666666667,
+            0.6900716666666665
+          ],
+          "independent_unit": "network seed",
+          "mean": 0.6459666666666668,
+          "n": 30
+        },
+        "r2": {
+          "ci95": null,
+          "independent_unit": "network seed",
+          "mean": null,
+          "n": 0
+        },
+        "rmse_kelvin": {
+          "ci95": null,
+          "independent_unit": "network seed",
+          "mean": null,
+          "n": 0
+        }
+      },
+      "probe_summaries": {},
+      "signed_simultaneous_raw": [],
+      "validation_gated_metrics": {
+        "double_opponency_score": {
+          "ci95": [
+            0.13824139586120782,
+            0.17010986994897662
+          ],
+          "independent_unit": "network seed",
+          "mean": 0.15344228541228186,
+          "n": 30
+        },
+        "double_opponent_fraction": {
+          "ci95": [
+            0.029166666666666667,
+            0.09166666666666666
+          ],
+          "independent_unit": "network seed",
+          "mean": 0.058333333333333334,
+          "n": 30
+        },
+        "normalized_chromatic_power": {
+          "ci95": [
+            0.6571286707520356,
+            0.6887405268603519
+          ],
+          "independent_unit": "network seed",
+          "mean": 0.6731316424312309,
+          "n": 30
+        }
+      },
+      "validation_pass_count": 30
+    },
+    {
+      "condition": "p9_optimizer",
+      "metrics": {
+        "double_opponency_score": {
+          "ci95": [
+            0.07295727043232787,
+            0.10364832353570577
+          ],
+          "independent_unit": "network seed",
+          "mean": 0.08762163729113276,
+          "n": 30
+        },
+        "double_opponent_fraction": {
+          "ci95": [
+            0.004166666666666667,
+            0.03333333333333333
+          ],
+          "independent_unit": "network seed",
+          "mean": 0.016666666666666666,
+          "n": 30
+        },
+        "normalized_chromatic_power": {
+          "ci95": [
+            0.6082892439996489,
+            0.6763243332796316
+          ],
+          "independent_unit": "network seed",
+          "mean": 0.6433676333059903,
+          "n": 30
+        }
+      },
+      "mode": "classify",
+      "n_networks": 30,
+      "performance": {
+        "accuracy": {
+          "ci95": [
+            0.6144333333333333,
+            0.7112025
+          ],
+          "independent_unit": "network seed",
+          "mean": 0.6636666666666666,
+          "n": 30
+        },
+        "balanced_accuracy": {
+          "ci95": [
+            0.6144333333333333,
+            0.7112025
+          ],
+          "independent_unit": "network seed",
+          "mean": 0.6636666666666666,
+          "n": 30
+        },
+        "r2": {
+          "ci95": null,
+          "independent_unit": "network seed",
+          "mean": null,
+          "n": 0
+        },
+        "rmse_kelvin": {
+          "ci95": null,
+          "independent_unit": "network seed",
+          "mean": null,
+          "n": 0
+        }
+      },
+      "probe_summaries": {},
+      "signed_simultaneous_raw": [],
+      "validation_gated_metrics": {
+        "double_opponency_score": {
+          "ci95": [
+            0.0717162307038828,
+            0.10169304899310361
+          ],
+          "independent_unit": "network seed",
+          "mean": 0.08566165263471895,
+          "n": 29
+        },
+        "double_opponent_fraction": {
+          "ci95": [
+            0.004310344827586207,
+            0.034482758620689655
+          ],
+          "independent_unit": "network seed",
+          "mean": 0.017241379310344827,
+          "n": 29
+        },
+        "normalized_chromatic_power": {
+          "ci95": [
+            0.6087188507612005,
+            0.6753473318425373
+          ],
+          "independent_unit": "network seed",
+          "mean": 0.6433576705475235,
+          "n": 29
+        }
+      },
+      "validation_pass_count": 29
+    },
+    {
+      "condition": "p9_optimizer",
+      "metrics": {
+        "double_opponency_score": {
+          "ci95": [
+            0.15243156968275307,
+            0.18325276581724181
+          ],
+          "independent_unit": "network seed",
+          "mean": 0.16747381746989534,
+          "n": 30
+        },
+        "double_opponent_fraction": {
+          "ci95": [
+            0.0375,
+            0.09583333333333334
+          ],
+          "independent_unit": "network seed",
+          "mean": 0.06666666666666667,
+          "n": 30
+        },
+        "normalized_chromatic_power": {
+          "ci95": [
+            0.6635572703431282,
+            0.6950749483006107
+          ],
+          "independent_unit": "network seed",
+          "mean": 0.6797008835882374,
+          "n": 30
+        }
+      },
+      "mode": "cma",
+      "n_networks": 30,
+      "performance": {
+        "accuracy": {
+          "ci95": [
+            0.6196641666666668,
+            0.7031758333333334
+          ],
+          "independent_unit": "network seed",
+          "mean": 0.6603333333333334,
+          "n": 30
+        },
+        "balanced_accuracy": {
+          "ci95": [
+            0.6196641666666668,
+            0.7031758333333334
+          ],
+          "independent_unit": "network seed",
+          "mean": 0.6603333333333334,
+          "n": 30
+        },
+        "r2": {
+          "ci95": null,
+          "independent_unit": "network seed",
+          "mean": null,
+          "n": 0
+        },
+        "rmse_kelvin": {
+          "ci95": null,
+          "independent_unit": "network seed",
+          "mean": null,
+          "n": 0
+        }
+      },
+      "probe_summaries": {},
+      "signed_simultaneous_raw": [],
+      "validation_gated_metrics": {
+        "double_opponency_score": {
+          "ci95": [
+            0.15243156968275307,
+            0.18325276581724181
+          ],
+          "independent_unit": "network seed",
+          "mean": 0.16747381746989534,
+          "n": 30
+        },
+        "double_opponent_fraction": {
+          "ci95": [
+            0.0375,
+            0.09583333333333334
+          ],
+          "independent_unit": "network seed",
+          "mean": 0.06666666666666667,
+          "n": 30
+        },
+        "normalized_chromatic_power": {
+          "ci95": [
+            0.6635572703431282,
+            0.6950749483006107
+          ],
+          "independent_unit": "network seed",
+          "mean": 0.6797008835882374,
+          "n": 30
+        }
+      },
+      "validation_pass_count": 30
+    }
+  ],
+  "inference_unit": "paired network seed",
+  "missing": [],
+  "objective_comparisons": [],
+  "stage": "E5c",
+  "training_backends": [
+    "mps"
+  ]
+}

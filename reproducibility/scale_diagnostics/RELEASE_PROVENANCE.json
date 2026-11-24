@@ -1,0 +1,65 @@
+{
+  "purpose": "Release-only portability changes; original numerical outputs and their execution hashes are retained unchanged.",
+  "original_executed_script_sha256": {
+    "run_scale_diagnostics.py": "44ec557988bcb07a831fc4a0d055fcccb8d4eb96f9a083c4051fc973c9b496b0",
+    "check_identity_precision.py": "e5ba1ae8529f7998684f3a5d08fe5d6a5d92dd9c80a4a2c47f4d630b8b039ec4",
+    "summarize_diagnostics.py": "ebb20d9afc110c4d470e6e4baebd471ffb973d4d3a7e6dd7c094b39c06c4799f"
+  },
+  "release_script_sha256_before_path_sanitization": {
+    "run_scale_diagnostics.py": "f228b8dc5fd605e1f74827e2c0eb445e17ea1b69e836f1f601777055f8d59b35",
+    "check_identity_precision.py": "6107131150ccc6eaec6ddda8eb4892cf2eef326f7f1fb7b0eaae426e9a3f1aa9",
+    "summarize_diagnostics.py": "16738670ee94c7f4e0abb4c9feacc90234328cafb3905f00e30f4acd21f1df88"
+  },
+  "changes": {
+    "run_scale_diagnostics.py": [
+      "Resolve --runtime to an absolute path.",
+      "Create --output if absent; require copied protocol before execution.",
+      "Hash the actual imported revision.spectral or src.spectral module, supporting release and frozen layouts."
+    ],
+    "check_identity_precision.py": [
+      "Resolve --runtime and create output directory; no scientific changes."
+    ],
+    "summarize_diagnostics.py": [
+      "Add --input/--output options; preserve default input at script directory.",
+      "Read input summaries and write generated report/figure separately.",
+      "Remove unused per-seed-file read and document reproduction from repository root."
+    ]
+  },
+  "validation": {
+    "description": "Re-executed all diagnostics using the release runtime against the same production data/checkpoints on CPU; compared every per-seed result and all scientific summary fields exactly.",
+    "checks": {
+      "identity_per_seed.json": {
+        "json_exact_equal": true,
+        "byte_exact_equal": true
+      },
+      "frozen_sweep_per_seed.json": {
+        "json_exact_equal": true,
+        "byte_exact_equal": true
+      },
+      "padding_per_seed.json": {
+        "json_exact_equal": true,
+        "byte_exact_equal": true
+      },
+      "summary_scientific_values": {
+        "cpu_threads": true,
+        "interop_threads": true,
+        "training": true,
+        "gray": true,
+        "n_identity_networks": true,
+        "n_source_networks": true,
+        "n_center_only_negative_controls": true,
+        "n_sweep_rows": true,
+        "n_padding_rows": true,
+        "identity": true,
+        "frozen_sweep": true,
+        "paired_frozen_contrasts": true,
+        "padding": true
+      },
+      "precision_summary_exact": true,
+      "precision_records_exact": true
+    },
+    "cpu_threads": 2,
+    "interop_threads": 1
+  },
+  "hash_caveat": "Original execution hashes in summary.json and identity_precision.json identify the executed originals, not these portability-edited scripts. A final release manifest may hash additional path-sanitized metadata."
+}

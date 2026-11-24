@@ -1,0 +1,56 @@
+{
+  "condition": "p9_baseline",
+  "config_sha256": "d22bda9ad7d7a347d9364cfff2faecb784c45132ae4a3d2414a48045319c3fc1",
+  "feature_type": "Six raw cone features: mean center L,M,S plus mean ring L,M,S",
+  "id": "E1_p9_baseline_s18",
+  "rows": [
+    {
+      "additional_pixel_noise": 0.0,
+      "base_pixel_noise": 0.01,
+      "classifier_C": 0.1,
+      "constant_train_mean_test_r2": -0.005706339862503018,
+      "constant_train_mean_test_rmse_kelvin": 6293.301381441438,
+      "majority_train_class_test_accuracy": 0.5,
+      "ridge_alpha": 0.01,
+      "test_classification_accuracy": 0.826,
+      "test_illuminant_r2": -2.8905463338528525,
+      "test_illuminant_rmse_kelvin": 12377.935983292276,
+      "train_classification_accuracy": 0.92425,
+      "validation_classification_accuracy": 0.94375,
+      "validation_illuminant_r2": 0.14686429261011946
+    },
+    {
+      "additional_pixel_noise": 0.02,
+      "base_pixel_noise": 0.01,
+      "classifier_C": 0.1,
+      "constant_train_mean_test_r2": -0.005706339862503018,
+      "constant_train_mean_test_rmse_kelvin": 6293.301381441438,
+      "majority_train_class_test_accuracy": 0.5,
+      "ridge_alpha": 100.0,
+      "test_classification_accuracy": 0.816,
+      "test_illuminant_r2": -2.777980230193493,
+      "test_illuminant_rmse_kelvin": 12197.554768513563,
+      "train_classification_accuracy": 0.91575,
+      "validation_classification_accuracy": 0.93625,
+      "validation_illuminant_r2": 0.14298628353453702
+    },
+    {
+      "additional_pixel_noise": 0.05,
+      "base_pixel_noise": 0.01,
+      "classifier_C": 0.01,
+      "constant_train_mean_test_r2": -0.005706339862503018,
+      "constant_train_mean_test_rmse_kelvin": 6293.301381441438,
+      "majority_train_class_test_accuracy": 0.5,
+      "ridge_alpha": 100.0,
+      "test_classification_accuracy": 0.775,
+      "test_illuminant_r2": -2.6691609137622088,
+      "test_illuminant_rmse_kelvin": 12020.6047014475,
+      "train_classification_accuracy": 0.8575,
+      "validation_classification_accuracy": 0.87875,
+      "validation_illuminant_r2": 0.1369567474927338
+    }
+  ],
+  "seconds": 0.16803337499732152,
+  "seed": 18,
+  "status": "Post hoc supplemental analysis; no network fitting or change to production results"
+}

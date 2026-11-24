@@ -1,0 +1,21 @@
+{
+  "note": "Checksums of the published diagnostic files after provenance-path normalization. Scientific outputs match original executed results; see RELEASE_PROVENANCE.json and PUBLICATION_PATHS.json.",
+  "sha256": {
+    "FINDINGS.md": "01563eec70ca9f6812a2faecc81d79ad2540581bc0e31494c595f51a07d497b9",
+    "PUBLICATION_PATHS.json": "02cdebd3309d29115746c26c4b3c9c4e5b091da05cbb91fd29361a5bda94d8e7",
+    "README.md": "85504f15ff9c9cb9ca108a37238fcd95714b7f58a241b7ed0b3afc7bab2cb0ea",
+    "RELEASE_PROVENANCE.json": "5a72311198008614954ac5baaeb852c23e087b892153bf8e0bb0b0678dbdf7f3",
+    "check_identity_precision.py": "6107131150ccc6eaec6ddda8eb4892cf2eef326f7f1fb7b0eaae426e9a3f1aa9",
+    "frozen_sweep_per_seed.json": "2844cf4481fcdfd0ddec820b37b581ec280abae2791e03f3746d20522e0f6054",
+    "identity_per_seed.json": "e168c81bf6c678e0c616556cbaf2624d6eedb93e87ee03dc789c570ea4d95885",
+    "identity_precision.json": "a5d3d89bdbfe17a96a468d953a7a31c05adbd5000a891889bce2e599729d2a08",
+    "padding_per_seed.json": "a7f5a0fbdce07318e7f77a345104f03dc0018891b60662be20786a1a88772d89",
+    "precision_protocol.json": "39758ff1f29a3b69efff05e235f5fbd0f12635eda52edcacef76692a786ab3b7",
+    "protocol.json": "889a6c3283951bc1f5c3fffae8dfd08057f23b4be73d400e92014569df417cd1",
+    "run_scale_diagnostics.py": "f228b8dc5fd605e1f74827e2c0eb445e17ea1b69e836f1f601777055f8d59b35",
+    "scale_diagnostics.pdf": "b4b366e8bb1c1692e2f24af4eee3a45827351abc0dd5e22897f94ee43f32ef03",
+    "scale_diagnostics.png": "bb07f6179455eeac316c4299925930886c7a6f751ac24f058ec45ded8ae12053",
+    "summarize_diagnostics.py": "16738670ee94c7f4e0abb4c9feacc90234328cafb3905f00e30f4acd21f1df88",
+    "summary.json": "aa72e197438c13c9dcbe7d7b03a29fd0a5a7afb64321d424e745932ae512c9fc"
+  }
+}

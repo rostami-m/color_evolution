@@ -1,0 +1,613 @@
+{
+  "groups": [
+    {
+      "additional_pixel_noise": 0.0,
+      "condition": "p9_baseline",
+      "metrics": {
+        "constant_train_mean_test_r2": {
+          "ci95": [
+            -0.0022152977291374485,
+            -0.000834060181134309
+          ],
+          "independent_unit": "data seed under fixed scene partition",
+          "mean": -0.00145391947015067,
+          "n": 30
+        },
+        "constant_train_mean_test_rmse_kelvin": {
+          "ci95": [
+            6320.83156926825,
+            6384.689499620056
+          ],
+          "independent_unit": "data seed under fixed scene partition",
+          "mean": 6352.464343251272,
+          "n": 30
+        },
+        "majority_train_class_test_accuracy": {
+          "ci95": [
+            0.5,
+            0.5
+          ],
+          "independent_unit": "data seed under fixed scene partition",
+          "mean": 0.5,
+          "n": 30
+        },
+        "test_classification_accuracy": {
+          "ci95": [
+            0.7018324999999999,
+            0.7702374999999998
+          ],
+          "independent_unit": "data seed under fixed scene partition",
+          "mean": 0.7357999999999999,
+          "n": 30
+        },
+        "test_illuminant_r2": {
+          "ci95": [
+            -1.1159712881324182,
+            -0.14381806310713557
+          ],
+          "independent_unit": "data seed under fixed scene partition",
+          "mean": -0.5952395737902271,
+          "n": 30
+        },
+        "test_illuminant_rmse_kelvin": {
+          "ci95": [
+            6457.519442499355,
+            8528.324705848327
+          ],
+          "independent_unit": "data seed under fixed scene partition",
+          "mean": 7437.677106281402,
+          "n": 30
+        },
+        "validation_classification_accuracy": {
+          "ci95": [
+            0.8442895833333335,
+            0.9200072916666666
+          ],
+          "independent_unit": "data seed under fixed scene partition",
+          "mean": 0.8845416666666668,
+          "n": 30
+        },
+        "validation_illuminant_r2": {
+          "ci95": [
+            0.18875789318734223,
+            0.2440327373405526
+          ],
+          "independent_unit": "data seed under fixed scene partition",
+          "mean": 0.21614114016080294,
+          "n": 30
+        }
+      }
+    },
+    {
+      "additional_pixel_noise": 0.02,
+      "condition": "p9_baseline",
+      "metrics": {
+        "constant_train_mean_test_r2": {
+          "ci95": [
+            -0.0022152977291374485,
+            -0.000834060181134309
+          ],
+          "independent_unit": "data seed under fixed scene partition",
+          "mean": -0.00145391947015067,
+          "n": 30
+        },
+        "constant_train_mean_test_rmse_kelvin": {
+          "ci95": [
+            6320.83156926825,
+            6384.689499620056
+          ],
+          "independent_unit": "data seed under fixed scene partition",
+          "mean": 6352.464343251272,
+          "n": 30
+        },
+        "majority_train_class_test_accuracy": {
+          "ci95": [
+            0.5,
+            0.5
+          ],
+          "independent_unit": "data seed under fixed scene partition",
+          "mean": 0.5,
+          "n": 30
+        },
+        "test_classification_accuracy": {
+          "ci95": [
+            0.6994991666666668,
+            0.7739450000000001
+          ],
+          "independent_unit": "data seed under fixed scene partition",
+          "mean": 0.7364999999999999,
+          "n": 30
+        },
+        "test_illuminant_r2": {
+          "ci95": [
+            -0.9768139265533009,
+            -0.10166397407172657
+          ],
+          "independent_unit": "data seed under fixed scene partition",
+          "mean": -0.5105105440710704,
+          "n": 30
+        },
+        "test_illuminant_rmse_kelvin": {
+          "ci95": [
+            6380.4704756109895,
+            8305.123682810898
+          ],
+          "independent_unit": "data seed under fixed scene partition",
+          "mean": 7290.394050246041,
+          "n": 30
+        },
+        "validation_classification_accuracy": {
+          "ci95": [
+            0.8284479166666667,
+            0.904253125
+          ],
+          "independent_unit": "data seed under fixed scene partition",
+          "mean": 0.8677500000000001,
+          "n": 30
+        },
+        "validation_illuminant_r2": {
+          "ci95": [
+            0.1822356728361215,
+            0.23673678140936774
+          ],
+          "independent_unit": "data seed under fixed scene partition",
+          "mean": 0.20899432440765572,
+          "n": 30
+        }
+      }
+    },
+    {
+      "additional_pixel_noise": 0.05,
+      "condition": "p9_baseline",
+      "metrics": {
+        "constant_train_mean_test_r2": {
+          "ci95": [
+            -0.0022152977291374485,
+            -0.000834060181134309
+          ],
+          "independent_unit": "data seed under fixed scene partition",
+          "mean": -0.00145391947015067,
+          "n": 30
+        },
+        "constant_train_mean_test_rmse_kelvin": {
+          "ci95": [
+            6320.83156926825,
+            6384.689499620056
+          ],
+          "independent_unit": "data seed under fixed scene partition",
+          "mean": 6352.464343251272,
+          "n": 30
+        },
+        "majority_train_class_test_accuracy": {
+          "ci95": [
+            0.5,
+            0.5
+          ],
+          "independent_unit": "data seed under fixed scene partition",
+          "mean": 0.5,
+          "n": 30
+        },
+        "test_classification_accuracy": {
+          "ci95": [
+            0.6940583333333332,
+            0.7693083333333333
+          ],
+          "independent_unit": "data seed under fixed scene partition",
+          "mean": 0.7308666666666664,
+          "n": 30
+        },
+        "test_illuminant_r2": {
+          "ci95": [
+            -0.7090264125729788,
+            -0.050974305353068204
+          ],
+          "independent_unit": "data seed under fixed scene partition",
+          "mean": -0.36068349279901335,
+          "n": 30
+        },
+        "test_illuminant_rmse_kelvin": {
+          "ci95": [
+            6277.146387258692,
+            7851.007309873937
+          ],
+          "independent_unit": "data seed under fixed scene partition",
+          "mean": 7035.945728150432,
+          "n": 30
+        },
+        "validation_classification_accuracy": {
+          "ci95": [
+            0.7860822916666665,
+            0.8603041666666666
+          ],
+          "independent_unit": "data seed under fixed scene partition",
+          "mean": 0.8233333333333334,
+          "n": 30
+        },
+        "validation_illuminant_r2": {
+          "ci95": [
+            0.16637914872887935,
+            0.2209980776216997
+          ],
+          "independent_unit": "data seed under fixed scene partition",
+          "mean": 0.19421500825516838,
+          "n": 30
+        }
+      }
+    },
+    {
+      "additional_pixel_noise": 0.0,
+      "condition": "p27_fixed",
+      "metrics": {
+        "constant_train_mean_test_r2": {
+          "ci95": [
+            -0.0022152977291374485,
+            -0.000834060181134309
+          ],
+          "independent_unit": "data seed under fixed scene partition",
+          "mean": -0.00145391947015067,
+          "n": 30
+        },
+        "constant_train_mean_test_rmse_kelvin": {
+          "ci95": [
+            6320.83156926825,
+            6384.689499620056
+          ],
+          "independent_unit": "data seed under fixed scene partition",
+          "mean": 6352.464343251272,
+          "n": 30
+        },
+        "majority_train_class_test_accuracy": {
+          "ci95": [
+            0.5,
+            0.5
+          ],
+          "independent_unit": "data seed under fixed scene partition",
+          "mean": 0.5,
+          "n": 30
+        },
+        "test_classification_accuracy": {
+          "ci95": [
+            0.7029966666666666,
+            0.7715683333333333
+          ],
+          "independent_unit": "data seed under fixed scene partition",
+          "mean": 0.7360333333333334,
+          "n": 30
+        },
+        "test_illuminant_r2": {
+          "ci95": [
+            -1.1689493200049068,
+            -0.16044852559455128
+          ],
+          "independent_unit": "data seed under fixed scene partition",
+          "mean": -0.6259921792637534,
+          "n": 30
+        },
+        "test_illuminant_rmse_kelvin": {
+          "ci95": [
+            6484.163073825279,
+            8602.138453793046
+          ],
+          "independent_unit": "data seed under fixed scene partition",
+          "mean": 7490.806165795103,
+          "n": 30
+        },
+        "validation_classification_accuracy": {
+          "ci95": [
+            0.854996875,
+            0.93154375
+          ],
+          "independent_unit": "data seed under fixed scene partition",
+          "mean": 0.895875,
+          "n": 30
+        },
+        "validation_illuminant_r2": {
+          "ci95": [
+            0.19085473528463862,
+            0.24611763720900884
+          ],
+          "independent_unit": "data seed under fixed scene partition",
+          "mean": 0.21892166033468682,
+          "n": 30
+        }
+      }
+    },
+    {
+      "additional_pixel_noise": 0.02,
+      "condition": "p27_fixed",
+      "metrics": {
+        "constant_train_mean_test_r2": {
+          "ci95": [
+            -0.0022152977291374485,
+            -0.000834060181134309
+          ],
+          "independent_unit": "data seed under fixed scene partition",
+          "mean": -0.00145391947015067,
+          "n": 30
+        },
+        "constant_train_mean_test_rmse_kelvin": {
+          "ci95": [
+            6320.83156926825,
+            6384.689499620056
+          ],
+          "independent_unit": "data seed under fixed scene partition",
+          "mean": 6352.464343251272,
+          "n": 30
+        },
+        "majority_train_class_test_accuracy": {
+          "ci95": [
+            0.5,
+            0.5
+          ],
+          "independent_unit": "data seed under fixed scene partition",
+          "mean": 0.5,
+          "n": 30
+        },
+        "test_classification_accuracy": {
+          "ci95": [
+            0.6972299999999999,
+            0.7666025000000001
+          ],
+          "independent_unit": "data seed under fixed scene partition",
+          "mean": 0.7311666666666666,
+          "n": 30
+        },
+        "test_illuminant_r2": {
+          "ci95": [
+            -1.135083796927878,
+            -0.148419948167895
+          ],
+          "independent_unit": "data seed under fixed scene partition",
+          "mean": -0.6059255666419853,
+          "n": 30
+        },
+        "test_illuminant_rmse_kelvin": {
+          "ci95": [
+            6466.906640210455,
+            8554.820330184366
+          ],
+          "independent_unit": "data seed under fixed scene partition",
+          "mean": 7455.415522706608,
+          "n": 30
+        },
+        "validation_classification_accuracy": {
+          "ci95": [
+            0.8501250000000001,
+            0.9257510416666668
+          ],
+          "independent_unit": "data seed under fixed scene partition",
+          "mean": 0.8907083333333332,
+          "n": 30
+        },
+        "validation_illuminant_r2": {
+          "ci95": [
+            0.18970619515315007,
+            0.244650519345522
+          ],
+          "independent_unit": "data seed under fixed scene partition",
+          "mean": 0.21702813682505126,
+          "n": 30
+        }
+      }
+    },
+    {
+      "additional_pixel_noise": 0.05,
+      "condition": "p27_fixed",
+      "metrics": {
+        "constant_train_mean_test_r2": {
+          "ci95": [
+            -0.0022152977291374485,
+            -0.000834060181134309
+          ],
+          "independent_unit": "data seed under fixed scene partition",
+          "mean": -0.00145391947015067,
+          "n": 30
+        },
+        "constant_train_mean_test_rmse_kelvin": {
+          "ci95": [
+            6320.83156926825,
+            6384.689499620056
+          ],
+          "independent_unit": "data seed under fixed scene partition",
+          "mean": 6352.464343251272,
+          "n": 30
+        },
+        "majority_train_class_test_accuracy": {
+          "ci95": [
+            0.5,
+            0.5
+          ],
+          "independent_unit": "data seed under fixed scene partition",
+          "mean": 0.5,
+          "n": 30
+        },
+        "test_classification_accuracy": {
+          "ci95": [
+            0.7003658333333331,
+            0.7722683333333332
+          ],
+          "independent_unit": "data seed under fixed scene partition",
+          "mean": 0.7357999999999999,
+          "n": 30
+        },
+        "test_illuminant_r2": {
+          "ci95": [
+            -1.0379870774637907,
+            -0.11916806917902682
+          ],
+          "independent_unit": "data seed under fixed scene partition",
+          "mean": -0.5492719936730313,
+          "n": 30
+        },
+        "test_illuminant_rmse_kelvin": {
+          "ci95": [
+            6416.103507044825,
+            8412.769075506596
+          ],
+          "independent_unit": "data seed under fixed scene partition",
+          "mean": 7358.438468209252,
+          "n": 30
+        },
+        "validation_classification_accuracy": {
+          "ci95": [
+            0.8340385416666667,
+            0.9108781250000001
+          ],
+          "independent_unit": "data seed under fixed scene partition",
+          "mean": 0.8746250000000001,
+          "n": 30
+        },
+        "validation_illuminant_r2": {
+          "ci95": [
+            0.18414674988222587,
+            0.23885318648771564
+          ],
+          "independent_unit": "data seed under fixed scene partition",
+          "mean": 0.21113361673960482,
+          "n": 30
+        }
+      }
+    }
+  ],
+  "historical_comparability": "Historical run_why.py created six center/surround cone values with independent vector noise and random CV within same prototype pool. Here we use spatial means of actual held-out-scene E1 patches and corrected split-contained preprocessing; this is a controlled re-evaluation, not exact historical reproduction.",
+  "n_seeds": 30,
+  "note": "Post hoc analysis of fixed E1 data; scaler fit on train; logistic C and ridge alpha independently selected on validation from .01,.1,1,10,100; test untouched. Baseline data include .01 pixel noise. Additional noise draws exactly match frozen decode() random streams. Per-seed uncertainty conditions on one fixed scene partition. Accuracy and R2 are on different scales and do not define an information-theoretic ordering.",
+  "paired_noise_differences": [
+    {
+      "comparison": "noise 0.02 minus noise 0",
+      "condition": "p9_baseline",
+      "metrics": {
+        "test_classification_accuracy": {
+          "ci95": [
+            -0.007400833333333343,
+            0.009534999999999967
+          ],
+          "independent_unit": "paired data seed under fixed scene partition",
+          "mean": 0.000699999999999997,
+          "n": 30
+        },
+        "test_illuminant_r2": {
+          "ci95": [
+            0.028981723659336243,
+            0.14866680115330172
+          ],
+          "independent_unit": "paired data seed under fixed scene partition",
+          "mean": 0.08472902971915638,
+          "n": 30
+        },
+        "test_illuminant_rmse_kelvin": {
+          "ci95": [
+            -251.5731082634096,
+            -57.356142682935086
+          ],
+          "independent_unit": "paired data seed under fixed scene partition",
+          "mean": -147.2830560353632,
+          "n": 30
+        }
+      }
+    },
+    {
+      "comparison": "noise 0.05 minus noise 0",
+      "condition": "p9_baseline",
+      "metrics": {
+        "test_classification_accuracy": {
+          "ci95": [
+            -0.017367500000000008,
+            0.00873416666666667
+          ],
+          "independent_unit": "paired data seed under fixed scene partition",
+          "mean": -0.004933333333333334,
+          "n": 30
+        },
+        "test_illuminant_r2": {
+          "ci95": [
+            0.05905103357303045,
+            0.45584251828386674
+          ],
+          "independent_unit": "paired data seed under fixed scene partition",
+          "mean": 0.23455608099121364,
+          "n": 30
+        },
+        "test_illuminant_rmse_kelvin": {
+          "ci95": [
+            -774.6072638627489,
+            -109.55860284961919
+          ],
+          "independent_unit": "paired data seed under fixed scene partition",
+          "mean": -401.7313781309706,
+          "n": 30
+        }
+      }
+    },
+    {
+      "comparison": "noise 0.02 minus noise 0",
+      "condition": "p27_fixed",
+      "metrics": {
+        "test_classification_accuracy": {
+          "ci95": [
+            -0.010134166666666668,
+            -0.0003333333333333261
+          ],
+          "independent_unit": "paired data seed under fixed scene partition",
+          "mean": -0.004866666666666663,
+          "n": 30
+        },
+        "test_illuminant_r2": {
+          "ci95": [
+            0.007334700654288068,
+            0.034609675036038234
+          ],
+          "independent_unit": "paired data seed under fixed scene partition",
+          "mean": 0.020066612621768273,
+          "n": 30
+        },
+        "test_illuminant_rmse_kelvin": {
+          "ci95": [
+            -60.40936618406949,
+            -12.86997747690488
+          ],
+          "independent_unit": "paired data seed under fixed scene partition",
+          "mean": -35.39064308849462,
+          "n": 30
+        }
+      }
+    },
+    {
+      "comparison": "noise 0.05 minus noise 0",
+      "condition": "p27_fixed",
+      "metrics": {
+        "test_classification_accuracy": {
+          "ci95": [
+            -0.012002500000000017,
+            0.012034999999999995
+          ],
+          "independent_unit": "paired data seed under fixed scene partition",
+          "mean": -0.00023333333333333355,
+          "n": 30
+        },
+        "test_illuminant_r2": {
+          "ci95": [
+            0.026143427083482516,
+            0.13586576949663454
+          ],
+          "independent_unit": "paired data seed under fixed scene partition",
+          "mean": 0.07672018559072198,
+          "n": 30
+        },
+        "test_illuminant_rmse_kelvin": {
+          "ci95": [
+            -225.3306918676304,
+            -52.5042560127625
+          ],
+          "independent_unit": "paired data seed under fixed scene partition",
+          "mean": -132.36769758584825,
+          "n": 30
+        }
+      }
+    }
+  ],
+  "script_sha256": "1d081193b1b4bf780f6d6a99777cb5a408c32c2cd7c05fd6d87017786f11c583",
+  "source_data_manifest_sha256": "9f807968d632436209651c503dedbf253c322023ee1af0a1cedd2753313fc1f2",
+  "total_decode_seconds": 17.1932998719858,
+  "total_seconds": 1.4688314580125734
+}

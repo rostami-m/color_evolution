@@ -1,0 +1,48 @@
+{
+  "analysis_backend": "cpu",
+  "include81": false,
+  "jobs": 2443,
+  "limits": {
+    "compute_threads": 2,
+    "concurrent_workers": 1,
+    "cpu_cores": 1.5,
+    "mps_driver_memory_gib": 4,
+    "worker_memory_gib": 4
+  },
+  "notes": [
+    "E5d decoding and E5e cardinal axes reuse E1 checkpoints.",
+    "Base architecture/standard rendering reuse E1; synthetic rendering uses E0_synthetic.",
+    "E5g: no original Dress image/calibration or measured-daylight protocol recovered; empirical Dress claim remains unresolved. No fabricated reproduction.",
+    "81 included only if explicitly selected after resource pilot; selection is independent of scientific results.",
+    "Primary n=30 is a fixed budget and does not establish statistical power.",
+    "GPU migration is a complete matched-backend replication; trained CPU results are preserved in parent_cpu/artifact_index.json but never pooled as GPU replicates.",
+    "CPU initialization and per-epoch sampling sequences, datasets, 80 epochs, batch size 128, loss definitions and learning rate are unchanged; numerical backend and foreach Adam differ.",
+    "Primary E1 executes before E0_synthetic; no sample size or scientific setting selected using benchmark outcomes."
+  ],
+  "primary_comparison": "E1: change in classifier-minus-regressor opponent fraction from p9 baseline to p27 fixed kernel, paired by seed",
+  "primary_endpoint": "Per-network fraction above matched initialization threshold",
+  "scope": "All runnable experiments from the revision plan; unsupported Dress interpretation requires narrowing or a separate specified protocol.",
+  "secondary_endpoints": [
+    "Normalized chromatic power",
+    "Continuous double-opponency score",
+    "Task performance on its own scale",
+    "Signed local and pooled probe effects"
+  ],
+  "seeds": 30,
+  "stage_counts": {
+    "E0": 1,
+    "E0_synthetic": 60,
+    "E1": 120,
+    "E2": 180,
+    "E3": 360,
+    "E4": 300,
+    "E4_proxy": 90,
+    "E5a": 660,
+    "E5b": 600,
+    "E5c": 60,
+    "E5f": 1,
+    "E5g": 1,
+    "analysis": 10
+  },
+  "training_backend": "mps"
+}

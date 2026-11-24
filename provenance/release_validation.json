@@ -1,0 +1,49 @@
+{
+  "date": "2026-11-24",
+  "frozen_source_hashes_verified": 43,
+  "production_jobs_completed": 2443,
+  "production_models_and_controls": 6870,
+  "exact_configuration_matches": 2431,
+  "representative_checkpoint_matches": 18,
+  "unit_and_integration_tests": {
+    "passed": 29,
+    "failed": 0,
+    "cpu_and_mps": true
+  },
+  "synthetic_smoke": {
+    "models": [
+      "untrained",
+      "classify",
+      "regress",
+      "shuffled"
+    ],
+    "epochs": 1,
+    "n_train": 64,
+    "n_validation": 32,
+    "n_test": 32,
+    "passed": true,
+    "scientific_evidence": false
+  },
+  "packaging": {
+    "build_and_isolated_install": true,
+    "external_working_directory_import": true
+  },
+  "postrun_numerical_reproduction": {
+    "primary": true,
+    "robustness": true,
+    "cma_initialization": true,
+    "illusions_utility": true,
+    "additional_signed_probes": true,
+    "raw_decoder_refit_performed": false
+  },
+  "figures": {
+    "generated_from_public_bundle": true,
+    "visually_inspected": true,
+    "layout": "main/illusions: 2 columns \u00d7 3 rows; geometry: 3 diagrams"
+  },
+  "caveats": [
+    "Tests establish implementation continuity and selected invariants, not biological validity.",
+    "The full 2443-job training study was not repeated during this code cleanup.",
+    "Three queue tests initially failed inside a sandbox denying process enumeration; all 29 tests passed when process inspection and MPS access were permitted."
+  ]
+}

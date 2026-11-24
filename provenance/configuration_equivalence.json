@@ -1,0 +1,39 @@
+{
+  "production_configs_checked": 2431,
+  "changed_configs": [],
+  "production_jobs": 2443,
+  "release_jobs": 2443,
+  "science_function_ast_equality": {
+    "models.py": true,
+    "analysis.py": true,
+    "illusions.py": true,
+    "evolution.py": true,
+    "accelerator.py": true,
+    "data.py": true,
+    "experiments.py": true,
+    "aggregate.py": true,
+    "prepare_data.py": true,
+    "daylight_limits.py": true,
+    "common.py": true,
+    "revision/spectral.py": {
+      "planck_illuminant": true,
+      "sample_illuminant": true,
+      "_gaussian": true,
+      "cone_sensitivities": true,
+      "random_reflectance": true,
+      "reflectance_to_lms": true,
+      "lms_to_opponent": true
+    },
+    "revision/legacy_metrics.py": {
+      "filter_scores": true
+    },
+    "revision/ecological_proxies.py": {
+      "ecological_reflectances": false,
+      "by_coord": true
+    }
+  },
+  "notes": [
+    "Function comparison excludes imports and docstrings. Ecological proxy WL alias extraction is checked numerically via config equality for every E4_proxy config.",
+    "No scientific configuration changes detected only if changed_configs is empty. Queue command ordering can differ; dependency graph and job IDs are preserved."
+  ]
+}

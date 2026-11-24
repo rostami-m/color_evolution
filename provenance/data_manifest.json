@@ -1,0 +1,302 @@
+{
+  "bank_clip": [
+    0.001,
+    1.2
+  ],
+  "citation": "Nascimento, Ferreira & Foster (2002), JOSA A 19, 1484\u20131490",
+  "download_listing": "https://sites.google.com/view/sergionascimento/home/scientific-data/hyperspectral-images-of-natural-scenes-2002",
+  "model_wavelength_nm": [
+    400,
+    410,
+    420,
+    430,
+    440,
+    450,
+    460,
+    470,
+    480,
+    490,
+    500,
+    510,
+    520,
+    530,
+    540,
+    550,
+    560,
+    570,
+    580,
+    590,
+    600,
+    610,
+    620,
+    630,
+    640,
+    650,
+    660,
+    670,
+    680,
+    690,
+    700
+  ],
+  "original_wavelength_nm": [
+    410,
+    420,
+    430,
+    440,
+    450,
+    460,
+    470,
+    480,
+    490,
+    500,
+    510,
+    520,
+    530,
+    540,
+    550,
+    560,
+    570,
+    580,
+    590,
+    600,
+    610,
+    620,
+    630,
+    640,
+    650,
+    660,
+    670,
+    680,
+    690,
+    700,
+    710
+  ],
+  "reflectance_note": "Effective reflectance can legitimately exceed one because of surface orientation; historical clipping retained and recorded.",
+  "resampling": "400 nm uses 410 nm endpoint; 410\u2013700 nm use measured bands",
+  "scenes": [
+    {
+      "crop_bounds": [
+        0,
+        748,
+        0,
+        820
+      ],
+      "download_url": "https://www.dropbox.com/s/2f1l57d8xor3kcx/scene1.zip?dl=1",
+      "fraction_above_one": 0.007730901345205427,
+      "fraction_below_zero": 0.0,
+      "mat_key": "reflectances",
+      "prepared_sha256": "ac9415957ca1469de43c2f80ee7cc08ba0fe34636c2df3e6475977ee503acca5",
+      "prepared_shape": [
+        748,
+        820,
+        31
+      ],
+      "raw_sha256": "4be9b23a99ab0c180d4475de0a6f058372accd7fecafb58cf074620c9fa013d9",
+      "scene": "scene1",
+      "shape": [
+        820,
+        820,
+        31
+      ]
+    },
+    {
+      "crop_bounds": [
+        0,
+        700,
+        0,
+        820
+      ],
+      "download_url": "https://www.dropbox.com/s/k8htlamps6zscb5/scene2.zip?dl=1",
+      "fraction_above_one": 2.494674828730978e-06,
+      "fraction_below_zero": 0.0,
+      "mat_key": "reflectances",
+      "prepared_sha256": "d7c3e523ec16c61145bb0473f05f6986340eddb6758d701e877810ba204fe8aa",
+      "prepared_shape": [
+        700,
+        820,
+        31
+      ],
+      "raw_sha256": "832e0341bc37ef7dd75892d21005b3d8fe2a19c070efcc97841ffd2395c4db78",
+      "scene": "scene2",
+      "shape": [
+        820,
+        820,
+        31
+      ]
+    },
+    {
+      "crop_bounds": [
+        0,
+        750,
+        0,
+        820
+      ],
+      "download_url": "https://www.dropbox.com/s/kj6bjly4cxf8464/scene3.zip?dl=1",
+      "fraction_above_one": 0.0020078774155168773,
+      "fraction_below_zero": 0.0,
+      "mat_key": "reflectances",
+      "prepared_sha256": "4783cfd8bc3b75931196e627b1f857cb3ca59dedb310ccd1a8ad6c1612a1cb63",
+      "prepared_shape": [
+        750,
+        820,
+        31
+      ],
+      "raw_sha256": "fc0390f16dc168622ad3bbe639fe352137b83dae4d5bea399b2371591dd19dfc",
+      "scene": "scene3",
+      "shape": [
+        820,
+        820,
+        31
+      ]
+    },
+    {
+      "crop_bounds": [
+        0,
+        664,
+        95,
+        820
+      ],
+      "download_url": "https://www.dropbox.com/s/jjq2srkhrz9b6uz/scene4.zip?dl=1",
+      "fraction_above_one": 1.9189806374853679e-07,
+      "fraction_below_zero": 0.0,
+      "mat_key": "reflectances",
+      "prepared_sha256": "c42b5dce5fb608f77ae567e7b72ec76bbb80849c64baeb10d1ebbcb547622619",
+      "prepared_shape": [
+        664,
+        725,
+        31
+      ],
+      "raw_sha256": "25b0eb8b1ca7e2d73e567158b079986946eb5d586cb9501c3a640a68c2d1fc5a",
+      "scene": "scene4",
+      "shape": [
+        820,
+        820,
+        31
+      ]
+    },
+    {
+      "crop_bounds": [
+        0,
+        819,
+        8,
+        820
+      ],
+      "download_url": "https://www.dropbox.com/s/iuwi89l4pnbnue5/scene5.zip?dl=1",
+      "fraction_above_one": 0.00792270345992209,
+      "fraction_below_zero": 0.0,
+      "mat_key": "reflectances",
+      "prepared_sha256": "21460ee15652b850f21c826817750c745696a4b8e612c59fab9039612acf4f58",
+      "prepared_shape": [
+        819,
+        812,
+        31
+      ],
+      "raw_sha256": "c25d2737f4260ded19efb7cda6f6b587b4346d0f3dbcc1b0e1e76847fe99f77f",
+      "scene": "scene5",
+      "shape": [
+        820,
+        820,
+        31
+      ]
+    },
+    {
+      "crop_bounds": [
+        0,
+        755,
+        168,
+        636
+      ],
+      "download_url": "https://www.dropbox.com/s/dxnj6lgdoi9iugz/scene6.zip?dl=1",
+      "fraction_above_one": 0.0,
+      "fraction_below_zero": 0.0,
+      "mat_key": "reflectances",
+      "prepared_sha256": "65389e0c367af6f22ad4d80f1d336892da19bf37c2d2ba33e4fb94b82a744ee4",
+      "prepared_shape": [
+        755,
+        468,
+        31
+      ],
+      "raw_sha256": "3f914615acd1339facbf5258bea4f849806b90a49fa04a69e617c5f132a916aa",
+      "scene": "scene6",
+      "shape": [
+        820,
+        820,
+        31
+      ]
+    },
+    {
+      "crop_bounds": [
+        94,
+        776,
+        214,
+        632
+      ],
+      "download_url": "https://www.dropbox.com/s/bdixyqgme3px0tt/scene7.zip?dl=1",
+      "fraction_above_one": 0.0,
+      "fraction_below_zero": 0.0,
+      "mat_key": "reflectances",
+      "prepared_sha256": "b9cca5fc76ac31acc72a9606638fe44396e2e63721b086e0723ebb2e59db1eae",
+      "prepared_shape": [
+        682,
+        418,
+        31
+      ],
+      "raw_sha256": "9180c80b7d237a1ec7da67432daef624e264aa4ae4eec2e10af3f127aa54b219",
+      "scene": "scene7",
+      "shape": [
+        820,
+        820,
+        31
+      ]
+    },
+    {
+      "crop_bounds": [
+        0,
+        700,
+        212,
+        820
+      ],
+      "download_url": "https://www.dropbox.com/s/xrerga98z563xvm/scene8.zip?dl=1",
+      "fraction_above_one": 0.05516388094644125,
+      "fraction_below_zero": 0.0,
+      "mat_key": "reflectances",
+      "prepared_sha256": "74123e747d7275ea972be887f57c8be7093ac9fb11b7c0beda49bc2d8d3c21d3",
+      "prepared_shape": [
+        700,
+        608,
+        31
+      ],
+      "raw_sha256": "647be0190a58dba4ef258b1b80cbbdcbc5a3213399b5ca132f1991a46264a3c1",
+      "scene": "scene8",
+      "shape": [
+        820,
+        820,
+        31
+      ]
+    }
+  ],
+  "schema_version": 2,
+  "source": "Foster 2002 effective-reflectance scenes; Nascimento coauthor-hosted files (zero border padding removed)",
+  "source_page": "https://personalpages.manchester.ac.uk/staff/david.foster/Hyperspectral_images_of_natural_scenes_02.html",
+  "split_rationale": "Frozen before natural-network training: train 1/2/4/5, validation 3/6, test 7/8; distinct scenes and sufficient category support. An initial scene-6-only validation partition lacked one category.",
+  "splits": {
+    "test": [
+      "scene7",
+      "scene8"
+    ],
+    "train": [
+      "scene1",
+      "scene2",
+      "scene4",
+      "scene5"
+    ],
+    "validation": [
+      "scene3",
+      "scene6"
+    ]
+  },
+  "trial_clip": [
+    0.01,
+    1.1
+  ]
+}

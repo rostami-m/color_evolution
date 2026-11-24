@@ -1,0 +1,16 @@
+{
+  "checked_date": "2026-11-24",
+  "source_run": "PRODUCTION_RUN",
+  "queue_state": "completed",
+  "queue_counts": {
+    "completed": 2443
+  },
+  "queue_active": [],
+  "source_hashes_checked": 43,
+  "source_changed_or_missing": [],
+  "checkpoint_count": 6870,
+  "nonempty_checkpoints": 6870,
+  "job_json_count": 16594,
+  "latest_job_file_mtime_local": "2026-11-21T09:27:33.981624",
+  "followup_status": "No newer numerical follow-up was found in the immutable production tree at the initial 24 November audit. New separately specified frozen-checkpoint diagnostics were subsequently executed in the separate scale_diagnostics package; production results were unchanged."
+}

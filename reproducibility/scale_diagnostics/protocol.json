@@ -1,0 +1,71 @@
+{
+  "title": "Post-production saved-checkpoint spatial-scale and padding diagnostics",
+  "frozen_at_utc": "2026-11-24T23:37:19.283027+00:00",
+  "status": "planned_before_numerical_diagnostic_execution",
+  "source_run": "mps_revision_20261120",
+  "independent_unit": "network/data seed under fixed scene partition; all30productionseeds retained",
+  "scope": "No training; diagnostic analyses separate from frozen primary endpoint; CPU only2threads/interop1",
+  "conditions": [
+    "E1/p9_baseline/classify",
+    "E1/p27_fixed/classify",
+    "E1/p27_dilated/classify"
+  ],
+  "identity": {
+    "weights": "all30 E1 p9 baseline classifiers copied without alteration",
+    "inputs": "32 deterministic positive random9x9 patches seed4400+seed, plus noise-free neutral,target-calibration,surround probes; literal nearest repeat3",
+    "comparison": "native9 dilation1 versus27 dilation3 with matching masks and zero padding",
+    "outcomes": [
+      "max absolute feature-map error after repeat",
+      "max absolute representation error",
+      "max absolute logits error",
+      "raw signed local and global differences",
+      "normalized signed local and global differences if calibration defined"
+    ],
+    "numerical_tolerance": "float32 atol=1e-6 rtol=1e-6 on arrays; report maxerror and calibration errors without replacingundefined"
+  },
+  "frozen_sweep": {
+    "weights": "three source conditions x30seeds",
+    "test_geometry": [
+      "patch9target3dilation1",
+      "patch9target3dilation3",
+      "patch27target9dilation1",
+      "patch27target9dilation3"
+    ],
+    "axes": [
+      "RG",
+      "BY"
+    ],
+    "contrast_amplitude": 0.15,
+    "gray": "same natural Bank.gray as production probes",
+    "noise": "none",
+    "raw_metric": "polarity-odd calibrated-axis projection numerator delta_dot_slope (unnormalized), and signed component vectors retained",
+    "normalized_metric": "delta_dot_slope divided by slope squared norm when denominator>1e-14, else undefined",
+    "local": "mean over physically unchanged central target of local feature map",
+    "global": "network representation (before output head), distinct from local and logits",
+    "summary": "mean,median,95%network-seed bootstrap CI10000draws;valid counts,sign counts;no multiplicity-adjusted confirmatoryclaims"
+  },
+  "padding": {
+    "zero_shot": [
+      "zeros",
+      "replicate",
+      "reflect"
+    ],
+    "inputs": "exact saved native test data regenerated using frozen Bank and config for each90E1models",
+    "negative_control": "all30 E2 intact_center_only classify checkpoints at nativegeometry; central RFdoesnotreachframe",
+    "outcomes": [
+      "testaccuracy",
+      "pairedaccuracydifferenceversuszeros",
+      "meanabsoluteandmaximumlogitdifference",
+      "fractionchangedpredictions",
+      "signednoise-freeBYprobechanges"
+    ],
+    "caveat": "zero-shotpaddingchangeisoutoftrainingdistributionandcannotisolatecausaltrainingmechanism"
+  },
+  "declared_limitations": [
+    "Frozendiagnosticsdo not prove separately trained weightschangeforbiologicalreasons",
+    "No humanvisualangle mapping",
+    "dilation3 sparse7x7footprint",
+    "no newfunctionalopponencytrainingorhumanappearancevalidation",
+    "Calibrationundefined retainedexplicitly; all30accuracyseedsused"
+  ]
+}

@@ -1,0 +1,119 @@
+{
+  "E4/both_locus0": {
+    "n": 30,
+    "raw_all_zero": 0,
+    "raw_flat_nonzero": 0,
+    "raw_all_undefined": 0,
+    "normalized_all_zero": 0,
+    "normalized_flat_nonzero": 0,
+    "normalized_all_undefined": 0
+  },
+  "E4/both_locus20": {
+    "n": 30,
+    "raw_all_zero": 3,
+    "raw_flat_nonzero": 0,
+    "raw_all_undefined": 0,
+    "normalized_all_zero": 0,
+    "normalized_flat_nonzero": 0,
+    "normalized_all_undefined": 3
+  },
+  "E4/both_locus40": {
+    "n": 30,
+    "raw_all_zero": 3,
+    "raw_flat_nonzero": 0,
+    "raw_all_undefined": 0,
+    "normalized_all_zero": 0,
+    "normalized_flat_nonzero": 0,
+    "normalized_all_undefined": 3
+  },
+  "E4/frequency_locus0": {
+    "n": 30,
+    "raw_all_zero": 0,
+    "raw_flat_nonzero": 0,
+    "raw_all_undefined": 0,
+    "normalized_all_zero": 0,
+    "normalized_flat_nonzero": 0,
+    "normalized_all_undefined": 0
+  },
+  "E4/frequency_locus20": {
+    "n": 30,
+    "raw_all_zero": 2,
+    "raw_flat_nonzero": 0,
+    "raw_all_undefined": 0,
+    "normalized_all_zero": 0,
+    "normalized_flat_nonzero": 0,
+    "normalized_all_undefined": 2
+  },
+  "E4/frequency_locus40": {
+    "n": 30,
+    "raw_all_zero": 3,
+    "raw_flat_nonzero": 0,
+    "raw_all_undefined": 0,
+    "normalized_all_zero": 0,
+    "normalized_flat_nonzero": 0,
+    "normalized_all_undefined": 3
+  },
+  "E4/loss_locus0": {
+    "n": 30,
+    "raw_all_zero": 0,
+    "raw_flat_nonzero": 0,
+    "raw_all_undefined": 0,
+    "normalized_all_zero": 0,
+    "normalized_flat_nonzero": 0,
+    "normalized_all_undefined": 0
+  },
+  "E4/loss_locus20": {
+    "n": 30,
+    "raw_all_zero": 2,
+    "raw_flat_nonzero": 0,
+    "raw_all_undefined": 0,
+    "normalized_all_zero": 0,
+    "normalized_flat_nonzero": 0,
+    "normalized_all_undefined": 2
+  },
+  "E4/loss_locus40": {
+    "n": 30,
+    "raw_all_zero": 3,
+    "raw_flat_nonzero": 0,
+    "raw_all_undefined": 0,
+    "normalized_all_zero": 0,
+    "normalized_flat_nonzero": 0,
+    "normalized_all_undefined": 3
+  },
+  "E4_proxy/foliage_synthetic_proxy": {
+    "n": 30,
+    "raw_all_zero": 0,
+    "raw_flat_nonzero": 0,
+    "raw_all_undefined": 0,
+    "normalized_all_zero": 0,
+    "normalized_flat_nonzero": 0,
+    "normalized_all_undefined": 0
+  },
+  "E4_proxy/fruit_synthetic_proxy": {
+    "n": 30,
+    "raw_all_zero": 0,
+    "raw_flat_nonzero": 0,
+    "raw_all_undefined": 0,
+    "normalized_all_zero": 0,
+    "normalized_flat_nonzero": 0,
+    "normalized_all_undefined": 0
+  },
+  "E4_proxy/skin_synthetic_proxy": {
+    "n": 30,
+    "raw_all_zero": 1,
+    "raw_flat_nonzero": 0,
+    "raw_all_undefined": 0,
+    "normalized_all_zero": 0,
+    "normalized_flat_nonzero": 1,
+    "normalized_all_undefined": 1
+  },
+  "E4/uniform_locus20": {
+    "n": 30,
+    "raw_all_zero": 1,
+    "raw_flat_nonzero": 0,
+    "raw_all_undefined": 0,
+    "normalized_all_zero": 0,
+    "normalized_flat_nonzero": 0,
+    "normalized_all_undefined": 1
+  }
+}

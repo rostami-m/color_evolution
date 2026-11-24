@@ -3,22 +3,18 @@ requires = ["setuptools>=68"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "color-empirical-theory"
-version = "0.1.0"
-description = "Code for 'Color perception as an evolved strategy'"
+name = "color-spatial-learning"
+version = "0.2.0"
+description = "Reproducible spatial-scale and task comparisons for learned color representations"
 requires-python = ">=3.10"
-dependencies = [
-    "numpy>=1.24",
-    "torch>=2.0",
-    "scipy>=1.10",
-    "matplotlib>=3.7",
-    "scikit-learn>=1.2",
-    "h5py>=3.8",
-]
+dependencies = ["numpy>=1.24", "torch>=2.0", "scipy>=1.10", "matplotlib>=3.7", "scikit-learn>=1.2", "h5py>=3.8", "psutil>=5.9"]
+
+[project.optional-dependencies]
+dev = ["pytest>=7"]
 
 [tool.setuptools.packages.find]
 where = ["."]
-include = ["src*", "experiments*"]
+include = ["revision*"]
 
-[project.optional-dependencies]
-dev = ["pytest"]
+[tool.pytest.ini_options]
+testpaths = ["tests"]

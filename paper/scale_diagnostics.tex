@@ -1,0 +1,28 @@
+% All numerical results are post-production,
+% exploratory saved-checkpoint diagnostics run on 24 November 2026.
+% Source: scale_diagnostics/summary.json and identity_precision.json.
+\subsection{Frozen-weight controls separate acute geometry from learned representations}
+\label{sec:frozen_scale_controls}
+
+To distinguish the immediate effect of stimulus geometry from differences acquired during training, we evaluated all 30 classifier checkpoints from each of the 9-pixel, 27-pixel fixed-kernel, and 27-pixel dilated-kernel conditions without updating their weights. Each network was evaluated at patch widths of 9 and 27 pixels and dilations of 1 and 3, with the corresponding centered target occupying one third of the patch width. We used noise-free simultaneous-induction probes on the red--green and blue--yellow axes, with identical target and surround colors across geometries. Both surround polarities were tested at contrast magnitude 0.15. We retained raw signed projection numerators and separately calibrated local feature, global representation, and output-logit responses. An undefined calibration denominator remained undefined. These post-production diagnostics were specified before execution and are separate from the frozen primary scale-by-objective endpoint.
+
+With the original 9-pixel-trained weights held fixed, the mean local blue--yellow target shift decreased from 0.03013 at width 9 and dilation 1 (95\% seed-bootstrap CI [0.02517, 0.03472]) to 0.00990 at width 27 and dilation 1 ([0.00800, 0.01166]). The paired decrease was $-0.02023$ [$-0.02306$, $-0.01716$], with 28 valid calibrations out of 30 seed blocks. Increasing dilation to 3 at width 27 restored the mean to 0.03013. The other two groups of saved weights showed the same attenuation and restoration (Table~\ref{tab:frozen_scale}). Notably, the large-fixed-trained weights give a higher mean local response on the shared small probe (0.05423) than the small-trained weights (0.03013), despite their lower amplitude-based opponent count. This descriptive comparison further separates calibrated functional response from a thresholded weight index. These controls demonstrate an acute dependence on relative spatial support without requiring differences in learned weights. They do not, by themselves, explain why separately trained networks acquired different weight-based opponent scores.
+
+\begin{table}[htbp]
+\centering
+\caption{Calibrated local blue--yellow target shifts for fixed saved weights. Positive values indicate assimilation. Columns specify the probe width and convolution dilation. Each row holds weights fixed; $n$ counts valid calibrations among 30 seed blocks and is the same across the three displayed columns. Full seed-bootstrap intervals and red--green, raw, global, and output-logit results are provided with the reproducibility data.}
+\label{tab:frozen_scale}
+\begin{tabular}{lrrrr}
+\hline
+Training condition & 9 / $d=1$ & 27 / $d=1$ & 27 / $d=3$ & $n$ \\
+\hline
+9-pixel, fixed kernel & 0.03013 & 0.00990 & 0.03013 & 28 \\
+27-pixel, fixed kernel & 0.05423 & 0.01944 & 0.05423 & 28 \\
+27-pixel, dilated kernel & 0.03314 & 0.01098 & 0.03314 & 27 \\
+\hline
+\end{tabular}
+\end{table}
+
+For this architecture, literal nearest-neighbor repetition of each input pixel into a $3\times3$ block, combined with tripled dilation and copied weights, preserves the local feature map up to the corresponding repetition. Pointwise nonlinearities and the $1\times1$ convolution commute with repetition, while target and global means are preserved. Thus the representation and copied-head outputs are mathematically unchanged. We tested this identity using 32 deterministic random patches and 14 calibration/induction probes per seed. The prespecified float32 absolute and relative tolerances of $10^{-6}$ were not met for every array; maximum feature, representation, and logit discrepancies were $2.86\times10^{-5}$, $8.58\times10^{-6}$, and $6.48\times10^{-5}$. A separately specified precision check retained these outcomes and repeated the computation in float64. All 30 networks then met absolute and relative tolerances of $10^{-12}$, with maximum discrepancies below $1.8\times10^{-14}$. This supports floating-point accumulation as the explanation for the float32 discrepancies rather than a failure of the spatial identity. Ordinary independently sampled 27-pixel noise and the standard non-repeated Cornsweet, Mach, and watercolor generators do not satisfy the identical-input assumption.
+
+We also replaced zero padding with replicate or reflect padding after training, using the exact native test trials for all 90 classifiers. Native zero-padding accuracies reproduced their saved values exactly. Replicate padding changed 2.82\%, 1.10\%, and 3.37\% of predictions for the 9-pixel, 27-pixel fixed, and 27-pixel dilated groups, respectively. Mean accuracy changes were $+0.500$ percentage points [95\% CI $-0.197$, $+1.193$], $+0.083$ [$-0.283$, $+0.480$], and $+0.360$ [$-0.413$, $+1.097$], using all 30 seeds per group. Reflect padding gave similar results. Local target blue--yellow shifts were exactly unchanged, consistent with the target receptive fields not reaching the outer frame, while global representations changed. Thirty intact-context center-only classifiers provided a negative control: neither padding replacement changed any predicted label or accuracy, and logit differences were limited to float32 roundoff. These out-of-distribution, post-training padding changes distinguish local induction from frame-sensitive global readouts, but do not establish whether padding affected the learning of opponent representations. The original primary interaction remains inconclusive.

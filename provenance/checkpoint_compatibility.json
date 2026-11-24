@@ -1,0 +1,191 @@
+{
+  "date": "2026-11-24",
+  "device": "cpu",
+  "threads": 2,
+  "n_representative_checkpoints": 18,
+  "passed": true,
+  "rows": [
+    {
+      "job": "E1_p9_baseline_s00",
+      "mode": "classify",
+      "input_arrays_identical": true,
+      "metadata_identical": true,
+      "predictions_bitwise_identical": true,
+      "metrics_identical": true,
+      "test_performance_identical": true,
+      "signed_local_and_global_probes_identical": true
+    },
+    {
+      "job": "E1_p9_baseline_s00",
+      "mode": "regress",
+      "input_arrays_identical": true,
+      "metadata_identical": true,
+      "predictions_bitwise_identical": true,
+      "metrics_identical": true,
+      "test_performance_identical": true,
+      "signed_local_and_global_probes_identical": true
+    },
+    {
+      "job": "E1_p9_baseline_s29",
+      "mode": "classify",
+      "input_arrays_identical": true,
+      "metadata_identical": true,
+      "predictions_bitwise_identical": true,
+      "metrics_identical": true,
+      "test_performance_identical": true,
+      "signed_local_and_global_probes_identical": true
+    },
+    {
+      "job": "E1_p9_baseline_s29",
+      "mode": "regress",
+      "input_arrays_identical": true,
+      "metadata_identical": true,
+      "predictions_bitwise_identical": true,
+      "metrics_identical": true,
+      "test_performance_identical": true,
+      "signed_local_and_global_probes_identical": true
+    },
+    {
+      "job": "E1_p27_fixed_s00",
+      "mode": "classify",
+      "input_arrays_identical": true,
+      "metadata_identical": true,
+      "predictions_bitwise_identical": true,
+      "metrics_identical": true,
+      "test_performance_identical": true,
+      "signed_local_and_global_probes_identical": true
+    },
+    {
+      "job": "E1_p27_fixed_s00",
+      "mode": "regress",
+      "input_arrays_identical": true,
+      "metadata_identical": true,
+      "predictions_bitwise_identical": true,
+      "metrics_identical": true,
+      "test_performance_identical": true,
+      "signed_local_and_global_probes_identical": true
+    },
+    {
+      "job": "E1_p27_fixed_s29",
+      "mode": "classify",
+      "input_arrays_identical": true,
+      "metadata_identical": true,
+      "predictions_bitwise_identical": true,
+      "metrics_identical": true,
+      "test_performance_identical": true,
+      "signed_local_and_global_probes_identical": true
+    },
+    {
+      "job": "E1_p27_fixed_s29",
+      "mode": "regress",
+      "input_arrays_identical": true,
+      "metadata_identical": true,
+      "predictions_bitwise_identical": true,
+      "metrics_identical": true,
+      "test_performance_identical": true,
+      "signed_local_and_global_probes_identical": true
+    },
+    {
+      "job": "E1_p27_dilated_s00",
+      "mode": "classify",
+      "input_arrays_identical": true,
+      "metadata_identical": true,
+      "predictions_bitwise_identical": true,
+      "metrics_identical": true,
+      "test_performance_identical": true,
+      "signed_local_and_global_probes_identical": true
+    },
+    {
+      "job": "E1_p27_dilated_s00",
+      "mode": "regress",
+      "input_arrays_identical": true,
+      "metadata_identical": true,
+      "predictions_bitwise_identical": true,
+      "metrics_identical": true,
+      "test_performance_identical": true,
+      "signed_local_and_global_probes_identical": true
+    },
+    {
+      "job": "E1_p27_dilated_s29",
+      "mode": "classify",
+      "input_arrays_identical": true,
+      "metadata_identical": true,
+      "predictions_bitwise_identical": true,
+      "metrics_identical": true,
+      "test_performance_identical": true,
+      "signed_local_and_global_probes_identical": true
+    },
+    {
+      "job": "E1_p27_dilated_s29",
+      "mode": "regress",
+      "input_arrays_identical": true,
+      "metadata_identical": true,
+      "predictions_bitwise_identical": true,
+      "metrics_identical": true,
+      "test_performance_identical": true,
+      "signed_local_and_global_probes_identical": true
+    },
+    {
+      "job": "E5c_p9_optimizer_s00",
+      "mode": "cma",
+      "input_arrays_identical": true,
+      "metadata_identical": true,
+      "predictions_bitwise_identical": true,
+      "metrics_identical": true,
+      "test_performance_identical": true,
+      "signed_local_and_global_probes_identical": true
+    },
+    {
+      "job": "E5c_p27_optimizer_s00",
+      "mode": "cma",
+      "input_arrays_identical": true,
+      "metadata_identical": true,
+      "predictions_bitwise_identical": true,
+      "metrics_identical": true,
+      "test_performance_identical": true,
+      "signed_local_and_global_probes_identical": true
+    },
+    {
+      "job": "E3_p9_learned_b_0_s01",
+      "mode": "classify",
+      "input_arrays_identical": true,
+      "metadata_identical": true,
+      "predictions_bitwise_identical": true,
+      "metrics_identical": true,
+      "test_performance_identical": true,
+      "signed_local_and_global_probes_identical": true
+    },
+    {
+      "job": "E3_p9_spatial_coarse_0_s01",
+      "mode": "classify",
+      "input_arrays_identical": true,
+      "metadata_identical": true,
+      "predictions_bitwise_identical": true,
+      "metrics_identical": true,
+      "test_performance_identical": true,
+      "signed_local_and_global_probes_identical": true
+    },
+    {
+      "job": "E3_p27_learned_b_0_s01",
+      "mode": "classify",
+      "input_arrays_identical": true,
+      "metadata_identical": true,
+      "predictions_bitwise_identical": true,
+      "metrics_identical": true,
+      "test_performance_identical": true,
+      "signed_local_and_global_probes_identical": true
+    },
+    {
+      "job": "E3_p27_spatial_coarse_0_s01",
+      "mode": "classify",
+      "input_arrays_identical": true,
+      "metadata_identical": true,
+      "predictions_bitwise_identical": true,
+      "metrics_identical": true,
+      "test_performance_identical": true,
+      "signed_local_and_global_probes_identical": true
+    }
+  ],
+  "scope": "Same saved production checkpoints evaluated with frozen source and release source in separate processes. Whole test arrays/labels/temperatures and prediction bytes are hashed; metrics, metadata and full signed local/global probe records are compared exactly. This is not a new training replication.",
+  "worker_script_sha256": "3831ef5227b48eb1b060d2da1df630ac47de98f778d6cbb00576d40195484af5"
+}

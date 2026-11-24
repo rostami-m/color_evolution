@@ -1,23 +1,36 @@
-# Python environments and byte-compiled files
 .venv/
 __pycache__/
+.pytest_cache/
 *.py[cod]
-
-# Generated and private project materials
-results/
-data/
-figures/
-archive/
-paper/
-runner/
-scripts/
-PROVENANCE.md
-CITATION.cff
-Makefile
-
-# OS noise
+*.egg-info/
+build/
+dist/
 .DS_Store
-
-# Model weights
+# Generated execution outputs and third-party datasets
+/data/
+/results/
+/generated/
+*.pt
+*.pth
 *.safetensors
-*.bin
+*.npy
+*.npz
+*.mat
+*.zip
+# Secrets and machine configuration
+.env
+.env.*
+token.txt
+*token*.txt
+*.pem
+*.key
+
+# Local plotting/font cache
+mpl_cache/
+*.aux
+*.log
+*.bbl
+*.blg
+*.out
+*.toc
+*.synctex.gz

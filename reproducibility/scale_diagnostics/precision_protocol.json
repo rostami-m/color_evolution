@@ -1,0 +1,15 @@
+{
+  "frozen_at_utc": "2026-11-24T23:39:34.359343+00:00",
+  "reason": "The original float32 identity diagnostics failed the prespecified atol=rtol1e-6 near cancellation. Do not replace or suppress those outcomes. This followup tests whether discrepancies shrink with arithmetic precision.",
+  "scope": "30same9trainedcheckpoints; same32random+14probeimages; castweightsandinputsto64bit; copied9d1vsrepeat27d3; no training",
+  "array_tolerance": {
+    "atol": 1e-12,
+    "rtol": 1e-12
+  },
+  "report": [
+    "maximum absolute error per map/representation/logits",
+    "passed count with fixed tolerance",
+    "allperseedresults"
+  ],
+  "interpretation": "Shrinking error with precision supports floating-point accumulation explanation, not exact bitwise identity at float32."
+}
