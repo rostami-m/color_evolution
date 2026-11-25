@@ -2,7 +2,7 @@
 
 Reproducible code and numerical results for the revised color-vision study. The active implementation is `revision/`, derived from the frozen source that ran the completed 2,443-job study (6,870 model/control records, 30 paired seed blocks). The older `src/`, `experiments/`, and `run_all.py` workflow is retired from this release; its Git history and the original research archive are preserved.
 
-The revised manuscript and compiled PDF are in `paper/`. Release tag: `visionresearch-revision-20261124-v2`. The code–paper audit is `reproducibility/PAPER_CODE_AUDIT.md`.
+The revised manuscript and compiled PDF are in `paper/`. Release tag: `visionresearch-revision-20261125`. The code–paper audit is `reproducibility/PAPER_CODE_AUDIT.md`.
 
 ## Install
 
@@ -24,7 +24,7 @@ No dataset download, model training, or GPU is needed:
 python scripts/reproduce.py --output generated
 ```
 
-This verifies checksums of `published_results/`, then creates `generated/figures/{main_results,illusion_results,scale_geometry}.pdf` and PNG versions, plus long-form summary tables in `generated/tables/`. The bundle contains per-seed primary results, stage summaries, robustness comparisons, signed-probe/utility audits, and raw-cone decoding summaries. These are recorded results; this command redraws and reformats them, rather than retraining models.
+This verifies checksums of `published_results/`, then creates `generated/figures/{study_design,learned_organization,task_and_reference,signed_induction,fixed_weight_controls,robustness_and_context}.pdf` and PNG versions, plus long-form summary tables in `generated/tables/`. `generated/figures/figure_source_data.json` records the numerical summaries and source hashes used for the six figures. The bundle contains per-seed primary results, stage summaries, robustness comparisons, signed-probe/utility audits, and raw-cone decoding summaries. These are recorded results; this command redraws and reformats them, rather than retraining models.
 
 ## Recreate the full study from the source data
 
@@ -42,13 +42,13 @@ For Apple MPS, replace `--backend cpu` with `--backend mps`, choose a separate r
 
 To inspect/control a running queue, substitute `status`, `pause`, `resume`, or `stop` for `run`, retaining `--output results/replication_cpu/queue`. Resume after an interruption with the original `run` command. Add `--retry-failed` only to retry recorded failed jobs. Completed model checkpoints are reused; an unfinished model restarts from its seed. The supervisor needs a live machine; run under a terminal multiplexer for an SSH session that may disconnect.
 
-After all jobs complete, recompute the post-run analyses and publication figures:
+After all jobs complete, recompute the production analyses and summary plots:
 
 ```bash
 python scripts/reanalyze.py --run results/replication_cpu --data-dir data --output results/replication_cpu/postrun --raw-decoding
 ```
 
-This requires the full completed 30-seed study, not a smoke design. All stage aggregates are also generated as dependencies within the queue. Raw-cone decoding is a separate post hoc CPU analysis and is requested explicitly. MPS and CPU replications are never pooled as exchangeable seed replicates. Floating-point backend differences can lead to different learned weights; fresh CPU results need not equal the published MPS numbers bit for bit.
+This produces numerical analyses and three production-summary plots. The six-figure manuscript set additionally requires the separate fixed-weight diagnostics described below; published diagnostics are never silently combined with a new run. This requires the full completed 30-seed study, not a smoke design. All stage aggregates are also generated as dependencies within the queue. Raw-cone decoding is a separate post hoc CPU analysis and is requested explicitly. MPS and CPU replications are never pooled as exchangeable seed replicates. Floating-point backend differences can lead to different learned weights; fresh CPU results need not equal the published MPS numbers bit for bit.
 
 ## Saved-checkpoint scale diagnostics
 
@@ -79,13 +79,21 @@ To redraw the supplementary figure and report from the public results alone:
 python reproducibility/scale_diagnostics/summarize_diagnostics.py --input reproducibility/scale_diagnostics --output generated/scale_diagnostics
 ```
 
+To draw all six manuscript figures from that independently regenerated run, after both reanalysis and diagnostic summaries are complete:
+
+```bash
+python scripts/reproduce.py --bundle results/replication_cpu/postrun --diagnostics results/replication_cpu/scale_diagnostics --output results/replication_cpu/manuscript --skip-verification
+```
+
+`--skip-verification` is for newly generated outputs whose hashes differ from the published manifests. Custom result bundles require an explicit matching diagnostics directory. The six-figure set also needs the raw-cone decoding analysis (`--raw-decoding` above). Alternatively supply `--diagnostics` to `reanalyze.py` when those diagnostics already exist.
+
 Protocols precede execution. The summary script reads `--input` and writes `--output`. See the diagnostic README for exact settings and original-versus-release script hashes.
 
 ## Interpretation and provenance
 
 - The 9×9 and 27×27 patches have 3×3 and 9×9 central targets. The dilated arm samples a sparse 3×3 kernel over a 7×7 footprint; it is not a dense 7×7 kernel.
-- 27×27 is a planned threefold scale extension, not an empirically optimized size. Relative spatial support and padding exposure both change across arms.
-- Legacy amplitude-based and normalized weight indices are descriptive measures, not physiological neuron identities. The frozen primary normalized interaction is inconclusive; other reported comparisons must retain their exploratory status.
+- 9×9 and 27×27 are complementary conditions specified together before the reported production results; their threefold side-length ratio isolates relative-support contrasts without changing the base parameter count. Neither size was empirically optimized. Relative spatial support and padding exposure both change across arms.
+- Amplitude-based and normalized weight indices are descriptive measures, not physiological neuron identities. The frozen primary normalized interaction is inconclusive; other reported comparisons must retain their exploratory status.
 - Signed local feature responses and pooled representations are not calibrated human perceptual reports. Distant local filling-in is outside this architecture's support. Open contours alone do not disqualify a watercolor effect.
 - Illumination uses generated Planck spectra, not measured daylight. Ecological proxy curves are analytic, not measured fruit, foliage or skin spectra. Utility probes measure bounded representation sensitivity, not human JNDs.
 - Held-out scenes are 7/8; train scenes are 1/2/4/5 and validation scenes 3/6. Targets and context crops are sampled independently. Uncertainty is conditional on this small fixed scene partition.

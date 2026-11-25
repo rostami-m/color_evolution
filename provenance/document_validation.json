@@ -1,10 +1,37 @@
 {
+  "date": "2026-11-25",
   "visionresearch-article": {
-    "pages": 38,
-    "unresolved_question_mark_pairs": 0
+    "pages": 40,
+    "unresolved_question_mark_pairs": 0,
+    "figures": [
+      {
+        "pdf_page": 11,
+        "min_ordinary_font_pt": 8.226375579833984
+      },
+      {
+        "pdf_page": 18,
+        "min_ordinary_font_pt": 8.053000450134277
+      },
+      {
+        "pdf_page": 21,
+        "min_ordinary_font_pt": 8.226375579833984
+      },
+      {
+        "pdf_page": 23,
+        "min_ordinary_font_pt": 8.226375579833984
+      },
+      {
+        "pdf_page": 27,
+        "min_ordinary_font_pt": 8.226375579833984
+      },
+      {
+        "pdf_page": 29,
+        "min_ordinary_font_pt": 8.226375579833984
+      }
+    ]
   },
   "Response": {
-    "pages": 8,
+    "pages": 7,
     "unresolved_question_mark_pairs": 0
   },
   "cover_letter_vr": {

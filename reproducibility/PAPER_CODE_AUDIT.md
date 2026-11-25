@@ -1,4 +1,8 @@
-# Revision audit — 24 November 2026
+# Revision audit
+
+Current release: `visionresearch-revision-20261125`. The final section records the author-directed revision of November 25; earlier validation is retained below.
+
+## Initial release — 24 November 2026
 
 This revision addresses all three comments from Reviewer 1 and the author's associated actions. The current manuscript is `visionresearch-article.tex`; `Response.tex` is the point-by-point response, and `cover_letter_vr.tex` is the updated cover letter. The response quotes the received comments and identifies the corresponding Methods, Results and Discussion changes. No journal submission is implied by synchronization to Overleaf.
 
@@ -54,3 +58,21 @@ A further review found that scaling the figures in LaTeX reduced some labels to 
 The related-work discussion now balances CLIP limitations with Akbarinia's positive task-dependent category-agreement result (2025, DOI 10.1016/j.neunet.2024.106758; primary author project and publisher/PubMed metadata checked). It also specifies the distinction between network chromatic activation tuning and human detection thresholds in Songlin et al. The introduction states the transferable contribution as a dissociation between learned weight indices, fixed-weight induction and decoded response sign. The response letter provides exact section, figure and table locations.
 
 All explicit reviewer requests have substantive responses. Human-scale validation, resolution convergence, causal attribution of learned-filter changes, and broader environmental generalization remain outside the established findings. The versioned follow-up is `visionresearch-revision-20261124-v2`; the original tag remains available.
+
+## Author revision — 25 November 2026
+
+Current release: `visionresearch-revision-20261125` (package 0.2.2). The revision incorporates the author-edited Overleaf commit `a654c83` and all five inline manuscript comments. The author confirmed that these TeX comments, together with edits to Response.tex, were the intended comment source.
+
+| Author request | Completed change |
+|---|---|
+| Short, engaging abstract | A 159-word abstract leads with the scientific question and findings; detailed numerical audit material is removed, while the inconclusive primary comparison remains accurately summarized. |
+| Standalone scientific narrative | Introduction and Discussion present a joint center–surround study, without amendment or historical-correction framing. |
+| Unified methods | The design describes the actual reported experiments, with operational history retained in provenance files rather than the main narrative. |
+| Complementary size justification | Methods explain compact boundary access, extended target interior, the shared one-third ratio, fixed parameter count, and threefold dilation/noise controls before the Results. Both sizes were specified before production outcomes. Directional mechanisms are conditional interpretations, not falsely claimed prospective registrations. E2/E4 remain explicitly 27-pixel-only. |
+| Six informative figures | Six figures are regenerated from verified current results: study design, learned organization, task/reference effects, signed induction, fixed-weight controls, and robustness/context. Unsupported historical panels are not reused. |
+
+The response preserves submission ID VR-26-173 and the author's preferred framing, gives precise section/figure/table locations, and matches the six-figure structure. The cover letter is dated November 25, 2026. The main document retains the normalized primary null and identifies saved-weight controls as exploratory post-production tests.
+
+Validation for this revision: 267 indexed numerical claims pass; 211 plotted summaries independently checked against eight source files; six figures regenerate from checksum-verified public results and diagnostic inputs; four release tests pass. The added test prevents silently mixing an independent result bundle with published fixed-weight diagnostics. The training implementation, configurations, recorded numerical results, and diagnostic records are unchanged. Full training and the previously completed 29-test scientific suite were not repeated for this manuscript/plotting revision.
+
+The manuscript compiles to 40 pages, the response to seven pages, and the cover letter to one page. All citations and references resolve. Ordinary text in the six figures measures at least 8.05 points in the compiled manuscript (mathematical superscripts are smaller). Sources, figures, captions, and compiled pages were checked together. The existing 2.608-point class/frontmatter box warning causes no visible clipping. Public code includes the manuscript and figure source audit, while private reviewer/author correspondence remains in Overleaf.

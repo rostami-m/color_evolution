@@ -1,0 +1,110 @@
+{
+  "exports": [
+    {
+      "file": "fixed_weight_controls.pdf",
+      "pages": 1,
+      "size_points": [
+        590.4000244140625,
+        482.3999938964844
+      ],
+      "font_sizes_points": [
+        12.5,
+        13.0
+      ],
+      "minimum_export_font": 12.5
+    },
+    {
+      "file": "learned_organization.pdf",
+      "pages": 1,
+      "size_points": [
+        590.4000244140625,
+        619.2000122070312
+      ],
+      "font_sizes_points": [
+        12.5,
+        13.0
+      ],
+      "minimum_export_font": 12.5
+    },
+    {
+      "file": "robustness_and_context.pdf",
+      "pages": 1,
+      "size_points": [
+        590.4000244140625,
+        655.2000122070312
+      ],
+      "font_sizes_points": [
+        12.5,
+        13.0
+      ],
+      "minimum_export_font": 12.5
+    },
+    {
+      "file": "signed_induction.pdf",
+      "pages": 1,
+      "size_points": [
+        590.4000244140625,
+        496.79998779296875
+      ],
+      "font_sizes_points": [
+        12.5,
+        13.0
+      ],
+      "minimum_export_font": 12.5
+    },
+    {
+      "file": "study_design.pdf",
+      "pages": 1,
+      "size_points": [
+        590.4000244140625,
+        547.2000122070312
+      ],
+      "font_sizes_points": [
+        12.5,
+        13.0,
+        16.0
+      ],
+      "minimum_export_font": 12.5
+    },
+    {
+      "file": "task_and_reference.pdf",
+      "pages": 1,
+      "size_points": [
+        590.4000244140625,
+        468.0
+      ],
+      "font_sizes_points": [
+        12.5,
+        13.0
+      ],
+      "minimum_export_font": 12.5
+    }
+  ],
+  "layout": [
+    {
+      "figure": "study_design",
+      "text_outside_canvas": []
+    },
+    {
+      "figure": "learned_organization",
+      "text_outside_canvas": []
+    },
+    {
+      "figure": "task_and_reference",
+      "text_outside_canvas": []
+    },
+    {
+      "figure": "signed_induction",
+      "text_outside_canvas": []
+    },
+    {
+      "figure": "fixed_weight_controls",
+      "text_outside_canvas": []
+    },
+    {
+      "figure": "robustness_and_context",
+      "text_outside_canvas": []
+    }
+  ],
+  "plotted_summaries": 211
+}

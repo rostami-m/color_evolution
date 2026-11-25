@@ -1,0 +1,14 @@
+{
+  "author_overleaf_base": "a654c83",
+  "addressed_inline_comments": 5,
+  "release_tag": "visionresearch-revision-20261125",
+  "claimed_prospective_scope": "Production condition definitions and normalized primary endpoint; mechanistic directions are not claimed preregistered",
+  "main_figures": 6,
+  "independently_checked_plotted_summaries": 211,
+  "claims_checked": 267,
+  "release_tests_passed": 4,
+  "scientific_training_code_unchanged": true,
+  "recorded_numerical_inputs_unchanged": true,
+  "full_training_repeated": false,
+  "custom_bundle_guard": "An explicit same-run diagnostics directory is required; no published diagnostic substitution"
+}

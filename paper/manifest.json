@@ -1,15 +1,18 @@
 {
-  "release_tag": "visionresearch-revision-20261124-v2",
+  "release_tag": "visionresearch-revision-20261125",
   "sha256": {
-    "README.md": "a153cfb7d192fb957dfc814bc264557f1fc2c431f601f838b17b9f9e40cffa31",
-    "REVISION_AUDIT.md": "bbded10f631d39e4e533d1b4a6d93752ca2d6217821cf0f0cc8153b377c07b14",
+    "README.md": "46b2c9278fd689575da4cf819a89fd9b50df9e6ea0583c2ecc452c0b34133a53",
+    "REVISION_AUDIT.md": "8bed3cdcb51a0fcda863c76bc5654724d6c2c15e862eed9ae87764ecbfa1300f",
     "elsarticle-harv.bst": "4fc8264ba5392b3f63542a568ecb1c8a880a410583b41f2a3935f175bc040de4",
     "references.bib": "245d01d720ec9dd76d6d23380182fc8e5e114ae720a309af210ea2c311e5123d",
-    "revision_figures/illusion_results.pdf": "a6fd91290c878f4486ec49e469700d222e8509798e26d4ee29b146536417ff33",
-    "revision_figures/main_results.pdf": "18adff27b95f92bc4e01a81c5ec36e33233bb03bfbf1ec2ed25102942c629ef1",
-    "revision_figures/scale_geometry.pdf": "9b060717553df4e3abfe7aa91ff99956270482c8c6e4c00b764eaaaa52d9ced0",
-    "scale_diagnostics.tex": "673d9199ca9e70c4d2a81ecaea56ea57d4fe64a228e2e1e9908498a0e3bbbb37",
-    "visionresearch-article.pdf": "8f3d486c07453a9d980e90376b3ffa6bb6e51cd8b09110ba5d31e9e725715842",
-    "visionresearch-article.tex": "bb2f2b5f21dd35f02178feb3fcbc6987edd2a5692dbc2df5ac5f916e9d4eaa43"
+    "revision_figures/fixed_weight_controls.pdf": "06df482e9918997027c1013dc10f65eb36b7c45df4539f8167848483cf8857b2",
+    "revision_figures/learned_organization.pdf": "aa4a3c38a0d496ed899a36fb1b6d7174580a917a3f6c70831eee941e9c2c6049",
+    "revision_figures/robustness_and_context.pdf": "ffe1bf45239efd2edb84a2188468c0ef75a78e558ab5de3f7fba34e71784c7d1",
+    "revision_figures/signed_induction.pdf": "7b8ab418e590ba76e128a0daebf5fd4b4556b04e61afe760c7f1281924f70a58",
+    "revision_figures/study_design.pdf": "5e6ceb3fcdf882ef129ba0051da3342bbdaa9cc27b52a15a194c65b35d0eec97",
+    "revision_figures/task_and_reference.pdf": "6cba6e8f80083cab77226d608c80cb5202df986f5b997b0857bb79721267fc81",
+    "scale_diagnostics.tex": "919a4c96c42e5b1d214267322facb85e81e51654cc7ef71edb97faf70c45613e",
+    "visionresearch-article.pdf": "5a069549700c05c27164a962919408279252b5dac57bb469995c517a1c05fca7",
+    "visionresearch-article.tex": "18087804c9189b7cfbc540aba050a3cd346b93ee5de735cfd2c2592ca959d3c3"
   }
 }

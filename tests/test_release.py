@@ -3,6 +3,7 @@ import importlib.util
 import json
 from pathlib import Path
 import sys
+import subprocess
 import pytest
 from revision.build_queue import build
 
@@ -35,3 +36,13 @@ def test_published_bundle_checksums():
     spec = importlib.util.spec_from_file_location('reproduce', project/'scripts/reproduce.py')
     module = importlib.util.module_from_spec(spec); spec.loader.exec_module(module)
     module.verify(project/'published_results')
+
+
+def test_custom_results_do_not_silently_use_published_diagnostics(tmp_path):
+    project = Path(__file__).resolve().parents[1]
+    for script in ['reproduce.py', 'plot_study.py']:
+        result = subprocess.run(
+            [sys.executable, str(project/'scripts'/script), '--bundle', str(tmp_path)],
+            capture_output=True, text=True)
+        assert result.returncode == 2
+        assert 'requires explicit --diagnostics from the same run' in result.stderr
