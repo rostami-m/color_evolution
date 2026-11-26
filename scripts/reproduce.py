@@ -54,7 +54,9 @@ def main():
     env.setdefault('MPLCONFIGDIR',str(output/'cache/matplotlib'))
     env.setdefault('XDG_CACHE_HOME',str(output/'cache'))
     for name, extra in [('plot_study.py', ['--bundle', str(bundle), '--diagnostics', str(diagnostics),
-                                         '--output', str(output/'figures')])]:
+                                         '--output', str(output/'figures')]),
+                        ('plot_illusion_guide.py', ['--diagnostics', str(diagnostics),
+                                                   '--output', str(output/'figures')])]:
         subprocess.run([sys.executable, str(project/'scripts'/name), *extra], env=env, check=True)
     print('Regenerated figures and tables:', output)
 

@@ -1,17 +1,19 @@
 {
   "date": "2026-11-25",
+  "release_tag": "visionresearch-neuroscience-20261125",
   "shared_artifacts_exact": {
     "visionresearch-article.tex": true,
     "scale_diagnostics.tex": true,
     "references.bib": true,
     "elsarticle-harv.bst": true,
     "REVISION_AUDIT.md": true,
+    "revision_figures/fixed_weight_controls.pdf": true,
+    "revision_figures/illusion_guide.pdf": true,
+    "revision_figures/learned_organization.pdf": true,
     "revision_figures/robustness_and_context.pdf": true,
     "revision_figures/signed_induction.pdf": true,
-    "revision_figures/learned_organization.pdf": true,
-    "revision_figures/task_and_reference.pdf": true,
-    "revision_figures/fixed_weight_controls.pdf": true,
-    "revision_figures/study_design.pdf": true
+    "revision_figures/study_design.pdf": true,
+    "revision_figures/task_and_reference.pdf": true
   },
   "compiled_pdf_exact": true
 }

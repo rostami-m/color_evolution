@@ -2,7 +2,7 @@
 
 Reproducible code and numerical results for the revised color-vision study. The active implementation is `revision/`, derived from the frozen source that ran the completed 2,443-job study (6,870 model/control records, 30 paired seed blocks). The older `src/`, `experiments/`, and `run_all.py` workflow is retired from this release; its Git history and the original research archive are preserved.
 
-The revised manuscript and compiled PDF are in `paper/`. Release tag: `visionresearch-revision-20261125`. The code–paper audit is `reproducibility/PAPER_CODE_AUDIT.md`.
+The revised manuscript and compiled PDF are in `paper/`. Release tag: `visionresearch-neuroscience-20261125`. The code–paper audit is `reproducibility/PAPER_CODE_AUDIT.md`.
 
 ## Install
 
@@ -24,7 +24,7 @@ No dataset download, model training, or GPU is needed:
 python scripts/reproduce.py --output generated
 ```
 
-This verifies checksums of `published_results/`, then creates `generated/figures/{study_design,learned_organization,task_and_reference,signed_induction,fixed_weight_controls,robustness_and_context}.pdf` and PNG versions, plus long-form summary tables in `generated/tables/`. `generated/figures/figure_source_data.json` records the numerical summaries and source hashes used for the six figures. The bundle contains per-seed primary results, stage summaries, robustness comparisons, signed-probe/utility audits, and raw-cone decoding summaries. These are recorded results; this command redraws and reformats them, rather than retraining models.
+This verifies checksums of `published_results/` and the matching fixed-weight diagnostics, then creates seven PDF and PNG figures in `generated/figures/`: `study_design`, `learned_organization`, `task_and_reference`, `illusion_guide`, `signed_induction`, `fixed_weight_controls`, and `robustness_and_context`. Long-form summary tables are saved in `generated/tables/`. `figure_source_data.json` records the summaries and source hashes for the six data figures. The explanatory `illusion_guide` captures actual probe inputs from the production evaluator; its exact LMS arrays and masks are saved in `illusion_guide_stimuli.npz`, with source hashes and physical-input checks in `illusion_guide_sources.json`. Its display colors are schematic, and it contains no new model or human response results. The bundle contains per-seed primary results, stage summaries, robustness comparisons, signed-probe/utility audits, and raw-cone decoding summaries. This command redraws recorded results and illustrates the measurement geometry without retraining models.
 
 ## Recreate the full study from the source data
 
@@ -48,7 +48,7 @@ After all jobs complete, recompute the production analyses and summary plots:
 python scripts/reanalyze.py --run results/replication_cpu --data-dir data --output results/replication_cpu/postrun --raw-decoding
 ```
 
-This produces numerical analyses and three production-summary plots. The six-figure manuscript set additionally requires the separate fixed-weight diagnostics described below; published diagnostics are never silently combined with a new run. This requires the full completed 30-seed study, not a smoke design. All stage aggregates are also generated as dependencies within the queue. Raw-cone decoding is a separate post hoc CPU analysis and is requested explicitly. MPS and CPU replications are never pooled as exchangeable seed replicates. Floating-point backend differences can lead to different learned weights; fresh CPU results need not equal the published MPS numbers bit for bit.
+This produces numerical analyses and three production-summary plots. The seven-figure manuscript set additionally requires the separate fixed-weight diagnostics described below; published diagnostics are never silently combined with a new run. These supply both the fixed-weight results and the matching neutral cone reference for the explanatory stimulus guide. This requires the full completed 30-seed study, not a smoke design. All stage aggregates are also generated as dependencies within the queue. Raw-cone decoding is a separate post hoc CPU analysis and is requested explicitly. MPS and CPU replications are never pooled as exchangeable seed replicates. Floating-point backend differences can lead to different learned weights; fresh CPU results need not equal the published MPS numbers bit for bit.
 
 ## Saved-checkpoint scale diagnostics
 
@@ -79,13 +79,13 @@ To redraw the supplementary figure and report from the public results alone:
 python reproducibility/scale_diagnostics/summarize_diagnostics.py --input reproducibility/scale_diagnostics --output generated/scale_diagnostics
 ```
 
-To draw all six manuscript figures from that independently regenerated run, after both reanalysis and diagnostic summaries are complete:
+To draw all seven manuscript figures from that independently regenerated run, after both reanalysis and diagnostic summaries are complete:
 
 ```bash
 python scripts/reproduce.py --bundle results/replication_cpu/postrun --diagnostics results/replication_cpu/scale_diagnostics --output results/replication_cpu/manuscript --skip-verification
 ```
 
-`--skip-verification` is for newly generated outputs whose hashes differ from the published manifests. Custom result bundles require an explicit matching diagnostics directory. The six-figure set also needs the raw-cone decoding analysis (`--raw-decoding` above). Alternatively supply `--diagnostics` to `reanalyze.py` when those diagnostics already exist.
+`--skip-verification` is for newly generated outputs whose hashes differ from the published manifests. Custom result bundles require an explicit matching diagnostics directory. The seven-figure set also needs the raw-cone decoding analysis (`--raw-decoding` above). Alternatively supply `--diagnostics` to `reanalyze.py` when those diagnostics already exist. To regenerate only the explanatory input plate, use `python scripts/plot_illusion_guide.py --diagnostics reproducibility/scale_diagnostics --output generated/figures`; for a new run, substitute its matching diagnostics directory.
 
 Protocols precede execution. The summary script reads `--input` and writes `--output`. See the diagnostic README for exact settings and original-versus-release script hashes.
 

@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "color-spatial-learning"
-version = "0.2.2"
+version = "0.2.3"
 description = "Reproducible spatial-scale and task comparisons for learned color representations"
 requires-python = ">=3.10"
 dependencies = ["numpy>=1.24", "torch>=2.0", "scipy>=1.10", "matplotlib>=3.7", "scikit-learn>=1.2", "h5py>=3.8", "psutil>=5.9"]

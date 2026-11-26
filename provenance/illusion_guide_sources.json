@@ -1,0 +1,335 @@
+{
+  "purpose": "Explanatory input geometry; no model-response or human-response data",
+  "input_source": "Inputs captured directly from revision.illusions.evaluate_illusions",
+  "capture_object": "Identity feature/input recorder; artificial outputs are discarded",
+  "geometry": {
+    "patch_size": 27,
+    "target_size": 9,
+    "dilation": 1,
+    "profile_grid": 81
+  },
+  "axes": {
+    "A_simultaneous": "BY",
+    "B_cornsweet": "luminance",
+    "C_mach": "luminance",
+    "D_watercolor": "BY"
+  },
+  "axis_relative_lms": {
+    "BY": [
+      -0.5,
+      -0.5,
+      1.0
+    ],
+    "luminance": [
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  "contrast_amplitude": 0.15,
+  "gray_lms": [
+    0.10708526937035828,
+    0.10174678019485514,
+    0.08126598591845993
+  ],
+  "display": {
+    "calibrated_rgb": false,
+    "neutral_rgb": [
+      0.76,
+      0.76,
+      0.76
+    ],
+    "positive_rgb": [
+      0.3,
+      0.47,
+      0.88
+    ],
+    "negative_rgb": [
+      0.94,
+      0.77,
+      0.27
+    ],
+    "note": "Schematic interpolation of BY relative contrast; mean relative LMS scales gray."
+  },
+  "watercolor": {
+    "contour_outer_dark_relative_lms": 0.7,
+    "near_pixels": 24,
+    "far_pixels": 25,
+    "zoom_bounds": [
+      32,
+      49
+    ]
+  },
+  "cornsweet": {
+    "near_distant_left_overlap": [
+      34
+    ],
+    "near_distant_right_overlap": [
+      45
+    ],
+    "note": "Production near and distant windows overlap in one unchanged column per side; distant windows remain outside cusp support."
+  },
+  "validation": {
+    "simultaneous_negative_target_unchanged": true,
+    "simultaneous_negative_surround_contrast": true,
+    "simultaneous_positive_target_unchanged": true,
+    "simultaneous_positive_surround_contrast": true,
+    "simultaneous_boundary_count_32": true,
+    "cornsweet_positive_captured_input_matches_recorded_profile": true,
+    "mach_ramp_captured_input_matches_recorded_profile": true,
+    "cornsweet_left_roi_physically_neutral": true,
+    "cornsweet_right_roi_physically_neutral": true,
+    "cornsweet_near_left_roi_physically_neutral": true,
+    "cornsweet_near_right_roi_physically_neutral": true,
+    "cornsweet_distant_outside_changed_input_support": true,
+    "watercolor_closed_near_physically_unchanged": true,
+    "watercolor_closed_far_physically_unchanged": true,
+    "watercolor_reversed_near_physically_unchanged": true,
+    "watercolor_reversed_far_physically_unchanged": true,
+    "watercolor_open_near_physically_unchanged": true,
+    "watercolor_open_far_physically_unchanged": true,
+    "watercolor_removed_near_physically_unchanged": true,
+    "watercolor_removed_far_physically_unchanged": true,
+    "watercolor_far_outside_changed_input_support": true,
+    "watercolor_near_accesses_changed_contour": true,
+    "watercolor_near_far_disjoint": true,
+    "no_artificial_response_values_exported": true
+  },
+  "layout": {
+    "font_min_points": 15.0,
+    "figure_inches": [
+      9.4,
+      10.6
+    ],
+    "text_outside_canvas": []
+  },
+  "source_sha256": {
+    "revision/illusions.py": "4e0950ee69cb777566b0a3c7dbba7092ffb6df6d7ea284feea74c6a9fdb9f06e",
+    "revision/models.py": "1b7adb6c3d89e20cc0460a985ac920fae12ce65f5cc7dab481c7da108c479de2",
+    "diagnostics/summary.json": "aa72e197438c13c9dcbe7d7b03a29fd0a5a7afb64321d424e745932ae512c9fc",
+    "scripts/plot_illusion_guide.py": "71503af61ad4e4c298b598a3f0a23ba0632a37fcf6af478c73e98c717a428923"
+  },
+  "output_sha256": {
+    "illusion_guide_stimuli.npz": "ab87974c40f90da5e4a19105dd78663ef6832fcd7c0d42599e8584c0b24aba99",
+    "illusion_guide.pdf": "9479087c07d849e7d49989ba55592363d18afaac346a6affc4d892531ad5bad4"
+  },
+  "arrays": {
+    "gray_lms": {
+      "shape": [
+        3
+      ],
+      "dtype": "float64"
+    },
+    "simultaneous_negative_lms": {
+      "shape": [
+        3,
+        27,
+        27
+      ],
+      "dtype": "float32"
+    },
+    "simultaneous_positive_lms": {
+      "shape": [
+        3,
+        27,
+        27
+      ],
+      "dtype": "float32"
+    },
+    "cornsweet_positive_lms": {
+      "shape": [
+        3,
+        81,
+        81
+      ],
+      "dtype": "float32"
+    },
+    "cornsweet_reversed_lms": {
+      "shape": [
+        3,
+        81,
+        81
+      ],
+      "dtype": "float32"
+    },
+    "cornsweet_removed_lms": {
+      "shape": [
+        3,
+        81,
+        81
+      ],
+      "dtype": "float32"
+    },
+    "mach_ramp_lms": {
+      "shape": [
+        3,
+        81,
+        81
+      ],
+      "dtype": "float32"
+    },
+    "mach_reversed_lms": {
+      "shape": [
+        3,
+        81,
+        81
+      ],
+      "dtype": "float32"
+    },
+    "mach_linear_lms": {
+      "shape": [
+        3,
+        81,
+        81
+      ],
+      "dtype": "float32"
+    },
+    "mach_flat_lms": {
+      "shape": [
+        3,
+        81,
+        81
+      ],
+      "dtype": "float32"
+    },
+    "watercolor_closed_lms": {
+      "shape": [
+        3,
+        81,
+        81
+      ],
+      "dtype": "float32"
+    },
+    "watercolor_reversed_lms": {
+      "shape": [
+        3,
+        81,
+        81
+      ],
+      "dtype": "float32"
+    },
+    "watercolor_open_lms": {
+      "shape": [
+        3,
+        81,
+        81
+      ],
+      "dtype": "float32"
+    },
+    "watercolor_removed_lms": {
+      "shape": [
+        3,
+        81,
+        81
+      ],
+      "dtype": "float32"
+    },
+    "simultaneous_target_mask": {
+      "shape": [
+        27,
+        27
+      ],
+      "dtype": "bool"
+    },
+    "simultaneous_boundary_mask": {
+      "shape": [
+        27,
+        27
+      ],
+      "dtype": "bool"
+    },
+    "simultaneous_interior_mask": {
+      "shape": [
+        27,
+        27
+      ],
+      "dtype": "bool"
+    },
+    "cornsweet_profile": {
+      "shape": [
+        81
+      ],
+      "dtype": "float64"
+    },
+    "cornsweet_left_roi": {
+      "shape": [
+        33
+      ],
+      "dtype": "int64"
+    },
+    "cornsweet_right_roi": {
+      "shape": [
+        34
+      ],
+      "dtype": "int64"
+    },
+    "cornsweet_near_left_roi": {
+      "shape": [
+        3
+      ],
+      "dtype": "int64"
+    },
+    "cornsweet_near_right_roi": {
+      "shape": [
+        3
+      ],
+      "dtype": "int64"
+    },
+    "mach_ramp_profile": {
+      "shape": [
+        81
+      ],
+      "dtype": "float64"
+    },
+    "mach_reversed_profile": {
+      "shape": [
+        81
+      ],
+      "dtype": "float64"
+    },
+    "mach_linear_profile": {
+      "shape": [
+        81
+      ],
+      "dtype": "float64"
+    },
+    "mach_flat_profile": {
+      "shape": [
+        81
+      ],
+      "dtype": "float64"
+    },
+    "mach_low_join_roi": {
+      "shape": [
+        3
+      ],
+      "dtype": "int64"
+    },
+    "mach_high_join_roi": {
+      "shape": [
+        3
+      ],
+      "dtype": "int64"
+    },
+    "watercolor_near_mask": {
+      "shape": [
+        81,
+        81
+      ],
+      "dtype": "bool"
+    },
+    "watercolor_far_mask": {
+      "shape": [
+        81,
+        81
+      ],
+      "dtype": "bool"
+    },
+    "watercolor_zoom_bounds": {
+      "shape": [
+        2
+      ],
+      "dtype": "int64"
+    }
+  }
+}

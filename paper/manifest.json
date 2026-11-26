@@ -1,18 +1,19 @@
 {
-  "release_tag": "visionresearch-revision-20261125",
+  "release_tag": "visionresearch-neuroscience-20261125",
   "sha256": {
-    "README.md": "46b2c9278fd689575da4cf819a89fd9b50df9e6ea0583c2ecc452c0b34133a53",
-    "REVISION_AUDIT.md": "8bed3cdcb51a0fcda863c76bc5654724d6c2c15e862eed9ae87764ecbfa1300f",
+    "README.md": "443be5cbee6b66103c399d82e0d7c37f95e721b70d1977a097c01b112d57405d",
+    "REVISION_AUDIT.md": "e6a2119ffb823e334dc25b68dd30019effa71baa17955886ab71f3c65f431f89",
     "elsarticle-harv.bst": "4fc8264ba5392b3f63542a568ecb1c8a880a410583b41f2a3935f175bc040de4",
-    "references.bib": "245d01d720ec9dd76d6d23380182fc8e5e114ae720a309af210ea2c311e5123d",
+    "references.bib": "a43ff987dc5f34def36e291fb5957cbf8a4347e273e36bdf0825b164268ab313",
     "revision_figures/fixed_weight_controls.pdf": "06df482e9918997027c1013dc10f65eb36b7c45df4539f8167848483cf8857b2",
+    "revision_figures/illusion_guide.pdf": "9479087c07d849e7d49989ba55592363d18afaac346a6affc4d892531ad5bad4",
     "revision_figures/learned_organization.pdf": "aa4a3c38a0d496ed899a36fb1b6d7174580a917a3f6c70831eee941e9c2c6049",
     "revision_figures/robustness_and_context.pdf": "ffe1bf45239efd2edb84a2188468c0ef75a78e558ab5de3f7fba34e71784c7d1",
     "revision_figures/signed_induction.pdf": "7b8ab418e590ba76e128a0daebf5fd4b4556b04e61afe760c7f1281924f70a58",
     "revision_figures/study_design.pdf": "5e6ceb3fcdf882ef129ba0051da3342bbdaa9cc27b52a15a194c65b35d0eec97",
     "revision_figures/task_and_reference.pdf": "6cba6e8f80083cab77226d608c80cb5202df986f5b997b0857bb79721267fc81",
     "scale_diagnostics.tex": "919a4c96c42e5b1d214267322facb85e81e51654cc7ef71edb97faf70c45613e",
-    "visionresearch-article.pdf": "5a069549700c05c27164a962919408279252b5dac57bb469995c517a1c05fca7",
-    "visionresearch-article.tex": "18087804c9189b7cfbc540aba050a3cd346b93ee5de735cfd2c2592ca959d3c3"
+    "visionresearch-article.pdf": "bac98d490724a99b89db00aa637fc42c2661b077236a75fc1049de462d9a49ce",
+    "visionresearch-article.tex": "d1e963d7e6090b3197563899ec58b36d357f480f738d55323248336462264260"
   }
 }

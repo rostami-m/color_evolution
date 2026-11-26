@@ -78,6 +78,19 @@
         13.0
       ],
       "minimum_export_font": 12.5
+    },
+    {
+      "file": "illusion_guide.pdf",
+      "pages": 1,
+      "size_points": [
+        676.7999877929688,
+        763.2000122070312
+      ],
+      "font_sizes_points": [
+        15.0,
+        16.0
+      ],
+      "minimum_export_font": 15.0
     }
   ],
   "layout": [
@@ -104,7 +117,14 @@
     {
       "figure": "robustness_and_context",
       "text_outside_canvas": []
+    },
+    {
+      "figure": "illusion_guide",
+      "text_outside_canvas": []
     }
   ],
-  "plotted_summaries": 211
+  "plotted_summaries": 211,
+  "explanatory_input_figure": "illusion_guide",
+  "input_support_checks": 24,
+  "release_tag": "visionresearch-neuroscience-20261125"
 }

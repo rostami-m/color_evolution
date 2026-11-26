@@ -14,12 +14,12 @@ def main():
     parser.add_argument('--data-dir', type=Path)
     parser.add_argument('--raw-decoding', action='store_true')
     parser.add_argument('--diagnostics', type=Path,
-                        help='Completed fixed-weight summaries from this run; enables all six manuscript figures')
+                        help='Completed fixed-weight summaries from this run; enables all seven manuscript figures')
     args = parser.parse_args()
     if args.raw_decoding and args.data_dir is None:
         parser.error('--raw-decoding requires --data-dir')
     if args.diagnostics is not None and not args.raw_decoding:
-        parser.error('--diagnostics requires --raw-decoding for the six-figure set')
+        parser.error('--diagnostics requires --raw-decoding for the seven-figure set')
     root = Path(__file__).resolve().parents[1]
     output = args.output.resolve(); output.mkdir(parents=True, exist_ok=True)
     env = dict(os.environ, COLOR_RUN=str(args.run.resolve()), COLOR_ANALYSIS=str(output))
@@ -38,7 +38,7 @@ def main():
     if args.diagnostics is not None:
         subprocess.run([sys.executable, str(root/'scripts/reproduce.py'), '--bundle', str(output),
                         '--diagnostics', str(args.diagnostics.resolve()), '--output', str(output),
-                        '--skip-verification'], check=True)
+                        '--skip-verification'], env=env, check=True)
     else:
         # Production summaries alone cannot supply the separate fixed-weight tests.
         # Preserve summary plots without mixing a new run with published diagnostics.
@@ -46,7 +46,7 @@ def main():
         tables(output, output/'tables')
         for script in ['plot_main.py', 'plot_illusions.py']:
             subprocess.run([sys.executable, str(root/'scripts'/script)], env=env, check=True)
-        print('Production summaries complete. To draw all six manuscript figures, pass this run\'s fixed-weight summaries to reproduce.py --diagnostics.')
+        print('Production summaries complete. To draw all seven manuscript figures, pass this run\'s fixed-weight summaries to reproduce.py --diagnostics.')
 
 
 if __name__ == '__main__':

@@ -1,0 +1,115 @@
+{
+  "date": "2026-11-25",
+  "release_tag": "visionresearch-neuroscience-20261125",
+  "scope": "Whole-manuscript neuroscience interpretation and original stimulus-guide figure; no new training or numerical result changes.",
+  "base_code_commit": "94e0b23e35a240013b2c2a474228a0ddd094acf7",
+  "base_overleaf_commit": "acc0f735e9fc80db57ec9a9e94496af7b7693644",
+  "framing": [
+    "Both sizes remain complementary production conditions; primary, secondary and exploratory analyses remain distinguished.",
+    "Learned filter organization, local contextual integration and decoded response sign are distinct measurements.",
+    "Unchanged distant local responses constrain the tested architecture; they do not establish that surface appearance requires a uniformly filled early cortical map.",
+    "Recurrent integration, multiscale feedforward processing and a shared spatial appearance decoder are prospective tests, not implemented explanations."
+  ],
+  "new_references": [
+    {
+      "key": "zweig2015surfaces",
+      "doi": "10.1523/JNEUROSCI.1334-15.2015",
+      "public_text": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6605310/",
+      "read": "Open full text",
+      "use": "Macaque V1 chromatic-surface responses emphasize edges and depend on square size.",
+      "limit": "Motivates boundary/interior separation; no mapping of model pixels to retinal visual angle."
+    },
+    {
+      "key": "roe2005brightness",
+      "doi": "10.1073/pnas.0500097102",
+      "public_text": "https://doi.org/10.1073/pnas.0500097102",
+      "read": "Public full text",
+      "use": "Cornsweet-related V2 thin-stripe responses beyond direct inducing-border support.",
+      "limit": "Sampled anesthetized macaque recordings do not assign all filling-in to one cortical area."
+    },
+    {
+      "key": "boyaci2007lightness",
+      "doi": "10.1016/j.cub.2007.05.005",
+      "public_text": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1931490/",
+      "read": "Open full text",
+      "use": "Human early-visual responses to context-dependent lightness.",
+      "limit": "fMRI association does not separate feedforward from feedback mechanisms."
+    },
+    {
+      "key": "cornelissen2006filling",
+      "doi": "10.1523/JNEUROSCI.4382-05.2006",
+      "public_text": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6674117/",
+      "read": "Open full text",
+      "use": "Counterevidence to uniform interior modulation and extended-edge alternative.",
+      "limit": "Different conditions and measurements; not a general denial of contextual neural signals."
+    },
+    {
+      "key": "vonderheydt2006watercolor",
+      "doi": "10.1163/156856806776923416",
+      "public_text": "https://doi.org/10.1163/156856806776923416",
+      "read": "Public full text",
+      "use": "Watercolor tint and figure-ground effects can dissociate.",
+      "limit": "Contour detection or enclosure alone is not a validated color-appearance measurement."
+    },
+    {
+      "key": "kimura2014watercolor",
+      "doi": "10.3389/fnhum.2014.00722",
+      "public_text": "https://doi.org/10.3389/fnhum.2014.00722",
+      "read": "Open full text",
+      "use": "Watercolor spread direction depends on contour configuration.",
+      "limit": "No assumption that every model BY/RG probe elicits the same human effect."
+    },
+    {
+      "key": "bannert2017invariance",
+      "doi": "10.1016/j.neuroimage.2017.06.079",
+      "public_text": "https://bibliographie.uni-tuebingen.de/xmlui/bitstream/handle/10900/78417/mb_thesis_apa6.pdf?sequence=1",
+      "read": "Author dissertation full-paper chapter, pages 43-63; final metadata verified",
+      "use": "Surface/illuminant information and context-dependent behavioral constancy and decoding.",
+      "limit": "Convergent cue dependence, not evidence that a known neutral patch is necessary or that humans estimate model temperature."
+    },
+    {
+      "key": "gerardin2018circuits",
+      "doi": "10.1016/j.neuroimage.2018.06.083",
+      "public_text": "https://univ-rennes2.hal.science/hal-01887326/file/223156.full.pdf",
+      "read": "Public HAL deposit of May 28 2018 bioRxiv manuscript; final journal metadata verified",
+      "use": "Human watercolor imaging compares induced and individually matched physical color, with differing effective-connectivity models.",
+      "limit": "Restricted 3-region/12-model DCM comparison is not a causal intervention or anatomical proof."
+    },
+    {
+      "key": "saeedi2024brightness",
+      "doi": "10.1038/s41467-024-46885-6",
+      "public_text": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11039481/",
+      "read": "Open full text",
+      "use": "Inhibition of higher mouse visual areas LM/LI reduces illusory-grating responses in V1, supporting feedback as a candidate.",
+      "limit": "Achromatic neon-color-spreading in mice; not direct evidence for the mechanism of model or human watercolor/Cornsweet responses."
+    }
+  ],
+  "existing_references_reexamined": [
+    "wachtler2003",
+    "de2021spatial",
+    "de2022coding",
+    "johnson2008orientation",
+    "solomon2004surrounds",
+    "kraft1999constancy",
+    "wallis2012mach",
+    "devinck2006watercolor",
+    "cohenduwek2019filling"
+  ],
+  "bibliographic_correction": "Nascimento et al. (2002): Ferreira given name corrected to Flavio, with accent, from Flaviano.",
+  "figure": "scripts/plot_illusion_guide.py captures original evaluation inputs. No dummy response enters exported illustration or results. Schematic display colors and analysis-mask overlays are explicitly labeled.",
+  "full_texts_redistributed": false,
+  "validation": {
+    "status": "passed",
+    "claims_checked": 267,
+    "release_tests_passed": 4,
+    "figures_regenerated": 7,
+    "prior_plotted_summaries_unchanged": 211,
+    "input_support_checks_passed": 24,
+    "scientific_implementation_and_results_unchanged": true,
+    "full_training_repeated": false,
+    "full_prior_scientific_suite_repeated": false,
+    "document_report": "document_validation.json",
+    "guide_report": "illusion_guide_sources.json",
+    "shared_paper_report": "paper_sync.json"
+  }
+}
